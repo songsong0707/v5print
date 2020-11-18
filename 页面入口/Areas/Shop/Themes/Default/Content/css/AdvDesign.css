@@ -1,0 +1,75 @@
+.g-main { overflow: hidden; clear: both; }
+.span12 { width: 950px; float: left; _display: inline; min-height: 1px; }
+.span3 { width: 230px; float: left; _display: inline; min-height: 1px; margin-left: 10px;background:#fbfbfb }
+
+.xm-box {clear: both; margin-bottom: 10px; background: #fff; _zoom: 1; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
+.xm-box .hd { height: 50px; border-bottom: 1px solid #e6e9ed; }
+.xm-box .hd .title { float: left; margin: 0; padding-left: 20px; font: 400 18px/50px arial,"Hiragino Sans GB","Microsoft YaHei",SimHei,sans-serif; color: #434a54; }
+.xm-box .hd .title input,.xm-box .hd .title select { height:30px;}
+.btn { display: inline-block; margin-bottom: 0; font-size: 14px; height: 38px; line-height: 38px; text-align: center; cursor: pointer; background-color: #fff; border: 1px solid #e6e9ed; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; color: #656d78; padding: 0; width: 140px; }
+.btn-primary { background-color: #dd4250; border: 0; color: #fff; }
+.btn-dakeLight { background-color: #ccd0d8; border: 0; color: #fff; }
+.xm-box label { display: inline-block; border: 1px solid #ccc;    position: relative;    margin-right: 30px;padding: 1px;margin-top:20px; }
+.xm-box label.active { border: 2px solid #f60;padding: 0px;}
+.xm-box label.active:before { position: absolute; content: ''; width: 15px; height: 15px; right: -2px; bottom: -3px; background: url("../images/selected.png"/*tpa=http://test.v5print.com/Areas/Shop/Themes/Default/Content/images/selected.png*/); background-size: 100% 100%; }
+.attributeValueStr { color: #777; display: block; text-align: center; border-bottom: 1px solid #ccc; font-size: 14px; line-height: 24px; }
+
+.AttributeValueList { overflow: hidden; margin: 10px; }
+.AttributeValueList .attributeImg { max-width: 200px; overflow: hidden; }
+.AttributeValueList .attributeImg img { }
+.AttributeValueList .attributeValue { text-align: center; line-height: 20px; margin-top: 10px; }
+.description { border: rgb(255, 106, 0) 2px solid; width: 800px; height: 150px; margin-top: 10px; margin-left: 10px; padding: 10px; }
+.attributeName { width: 120px; margin-right: 20px; display: block; float: left;     text-align: right;}
+.buybox { width: 820px; height: 60px; line-height: 60px; background: #f8f8f8; border-top: 1px solid #eaeaea; margin-top: 15px; margin-left: 10px; margin-bottom: 20px; }
+.jiage { padding: 10px; background: #f8f8f8; margin: 10px; height: 60px; line-height: 60px; background: #f8f8f8; border-top: 1px solid #eaeaea; margin-top: 15px; text-align: right; }
+.jiage p { float: left; color: #ec4958;font-weight: 700; font-size: 24px;  }
+
+.btn-primary { margin-left: 400px; }
+
+.picturenav { width: 920px; overflow: hidden; margin: 10px auto; padding: 10px; }
+
+.smallpicture { float: left; width: 220px; overflow: hidden; }
+
+.templatepicture { text-align: center; padding: 10px; }
+
+.write-sjxq { padding-bottom: 10px; }
+
+#flow { margin-top: 20px; }
+
+.flow-box { border-radius: 2px; float: left; display: inline; width: 220px; height: auto; margin-left: 12px; margin-right: 3px; margin-bottom: 15px; padding-top: 11px; background: #fffffd; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4); }
+
+.flow-thumb { text-align: center; background: url("../images/picloadding.jpg"/*tpa=http://test.v5print.com/Areas/Shop/Themes/Default/Content/images/picloadding.jpg*/) no-repeat center center; }
+
+.flow-thumb:hover { opacity: 0.6; filter: alpha(opacity=60); -moz-opacity: 0.6; }
+
+.flow-info { padding-top: 10px; padding-bottom: 10px; width: 200px; text-align: center; line-height: 20px; }
+
+.red { color: #dd4250; }
+
+#shangchuang { text-align: left; overflow: hidden; padding-left: 10px; }
+
+#fsUploadProgress { width: auto; margin-bottom: 10px; margin-right: 10px; }
+
+.progressWrapper { overflow: hidden; }
+
+.progressContainer { margin-top: 10px; padding: 8px; border: solid 1px #E8E8E8; background-color: #F7F7F7; overflow: hidden; }
+
+.progressName { font-size: 8pt; font-weight: 700; color: #555; width: 325px; height: 14px; text-align: left; white-space: nowrap; padding-bottom: 10px; overflow: hidden; }
+
+.progressBarComplete, .progressBarError { font-size: 0; width: 0%; height: 10px; background-color: #ff6600; margin-top: 5px; }
+
+.progressBarInProgress { border: 1px solid #e7e7e7; padding: 2px; margin-top: 10px; background-color: #fff; }
+
+.progressBarInProgress2 { background-color: #ff6600; height: 10px; z-index: 10; }
+
+.progressBarComplete { width: 100%; background-color: green; visibility: hidden; }
+
+.progressBarError { width: 100%; background-color: red; visibility: hidden; }
+
+.progressBarStatus { margin-top: 2px; width: 337px; text-align: left; white-space: nowrap; }
+
+a.progressCancel { font-size: 0; display: block; height: 14px; width: 14px; background-image: url("../../../../../../Scripts/swfupload/cancelbutton.gif"/*tpa=http://test.v5print.com/Scripts/swfupload/cancelbutton.gif*/); float: right; }
+
+a.progressCancel:hover { background-position: 0px 0px; }
+
+.swfupload { margin-left: 10px; }

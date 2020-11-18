@@ -1,0 +1,6 @@
+.Validform_checktip { float: right; }
+.Validform_right { }
+.Validform_wrong { margin-right: 10px; width: 185px; height: 42px; line-height: 42px; background: url("../images/login-icon2-error.png"/*tpa=http://test.v5print.com/Areas/Shop/Themes/Default/Content/images/login-icon2-error.png*/) no-repeat 8px 11px #ffebeb; padding-right: 10px; border: #e4393c solid 1px; color: #e4393c; padding-left: 33px; }
+.Validform_loading { margin-right: 10px; height: 42px; line-height: 42px; background: url("../images/onLoad.gif"/*tpa=http://test.v5print.com/Areas/Shop/Themes/Default/Content/images/onLoad.gif*/) no-repeat 10px center; padding-right: 10px; border: 1px solid #cccccc; color: #9d9d9d; padding-left: 33px; }
+.Validform_error, .Validform_error:focus { background-position: -630px 0; border-color: #e4393c; color: #e4393c; }
+.Validform_correct { border: 1px solid #93c399; background: url("../images/ipt-ture-bg.png"/*tpa=http://test.v5print.com/Areas/Shop/Themes/Default/Content/images/ipt-ture-bg.png*/) no-repeat 285px 12px #fff; border-color: #93c399; outline: 0; color: #2c9a3a; }

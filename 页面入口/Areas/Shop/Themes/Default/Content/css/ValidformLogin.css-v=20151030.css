@@ -1,0 +1,8 @@
+.loginBox dl dd.Validform_checktip { height: 31px; line-height: 31px; }
+.loginBox dl dd.Validform_right { background: url("../images/login-icon2.png"/*tpa=http://test.v5print.com/Areas/Shop/Themes/Default/Content/images/login-icon2.png*/) no-repeat 8px 5px #e9fbd0; border-color: #d3e9b4; border-style: solid; border-width: 1px; color: #666; }
+.loginBox dl dd.Validform_wrong { background: url("../images/login-icon2-error.png"/*tpa=http://test.v5print.com/Areas/Shop/Themes/Default/Content/images/login-icon2-error.png*/) no-repeat 8px 5px #ffebeb; border-color: #e4393c; border-style: solid; border-width: 1px; color: #e4393c; }
+.Validform_loading { background: url("../images/onLoad.gif"/*tpa=http://test.v5print.com/Areas/Shop/Themes/Default/Content/images/onLoad.gif*/) no-repeat left center; }
+.loginBox dl dd input.Validform_error_name, .loginBox dl dd input.Validform_error_name:focus { background-position: -630px 0; border-color: #e4393c; color: #e4393c; }
+.loginBox dl dd input.Validform_correct_name { background-position: -315px 0; border-color: #93c399; color: #2c9a3a; }
+.loginBox dl dd input.Validform_error_password, .loginBox dl dd input.Validform_error_password:focus { background-position: -630px -60px; border-color: #e4393c; color: #e4393c; }
+.loginBox dl dd input.Validform_correct_password { background-position: -315px -60px; border-color: #93c399; color: #2c9a3a; }

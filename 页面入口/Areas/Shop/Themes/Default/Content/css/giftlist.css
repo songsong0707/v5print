@@ -1,0 +1,267 @@
+@charset "UTF-8";
+.fn-left, .jf-lf-sidebar, .action-img-left, .award-rule { float: left; display: inline; }
+
+.fn-right, .jf-main-content, .cash-ticket-column h5 .more,
+.cash-gift-column h5 .more, .new-win { float: right; display: inline; }
+.action-desc-right { float: left; display: inline; padding-left: 15px;width:100px; }
+
+.jf-lf-sidebar { width: 230px; margin-bottom: 30px; }
+
+.jf-main-content { width: 1190px; margin-bottom: 30px; }
+
+.jf-large-btn { width: 158px; height: 35px !important; line-height: 35px !important; border-radius: 0px!important; }
+
+.jf-middle-btn { width: 114px; height: 35px !important; line-height: 35px !important; }
+
+.jf-small-btn { width: 56px; height: 24px !important; line-height: 24px !important; padding: 0; color: #fff; }
+
+.ui-button-grey { color: #666; }
+
+.jf-summary { padding: 23px 16px 20px; border: 1px solid #e7e7e7; color: #666; font-size: 12px; line-height: 22px; }
+
+.jf-summary .num { margin-bottom: 34px; }
+
+.jf-summary .rank { color: #666; }
+
+.jf-prompt-msg { margin-bottom: 34px; }
+
+.jf-about { border: 1px solid #e7e7e7; margin-top: 20px;  }
+
+.jf-left-nav-list { padding: 0 14px; }
+
+.jf-left-nav-list h6 { padding-left: 54px; font-size: 18px; height: 42px; line-height: 42px; font-family: "微软雅黑";font-weight: normal;margin: 0px;color: #666; }
+
+.jf-left-nav-list p { color: #999; margin-top: 14px; font-size: 12px; line-height: 22px; }
+
+.jf-effect,
+.jf-get-way,
+.jf-expense { margin-top: 19px; padding-bottom: 19px; border-bottom: 1px solid #e7e7e7; }
+
+.jf-indate { margin-top: 19px; border-bottom: none; }
+
+.jf-nav-list-i, .jf-effect::before, .jf-get-way::before, .jf-expense::before, .jf-indate::before { width: 42px; height: 42px; position: absolute; display: block; content: ''; }
+
+.jf-effect::before { background: url("../../../../../../../test.gtcdn.gaitu.cn/images/usercenter/jfIcon.png"/*tpa=http://test.gtcdn.gaitu.cn/images/usercenter/jfIcon.png*/) no-repeat; }
+
+.jf-get-way::before { background: url("../../../../../../../test.gtcdn.gaitu.cn/images/usercenter/jfIcon.png"/*tpa=http://test.gtcdn.gaitu.cn/images/usercenter/jfIcon.png*/) -57px 0px no-repeat; }
+
+.jf-expense::before { background: url("../../../../../../../test.gtcdn.gaitu.cn/images/usercenter/jfIcon.png"/*tpa=http://test.gtcdn.gaitu.cn/images/usercenter/jfIcon.png*/) -111px 0px no-repeat; }
+
+.jf-indate::before { background: url("../../../../../../../test.gtcdn.gaitu.cn/images/usercenter/jfIcon.png"/*tpa=http://test.gtcdn.gaitu.cn/images/usercenter/jfIcon.png*/) -167px 0px no-repeat; }
+
+.jf-dynamic { border: 1px solid #e7e7e7; background: #fff; margin-top: 20px; }
+
+.user-name { background: #fafafa; font-size: 14px; font-weight: bold; margin-bottom: 10px; }
+
+.duihuan { padding: 0 15px; }
+
+.duihuan li { overflow: hidden; padding: 15px 0; border-bottom: 1px dotted #e7e7e7; }
+
+.duihuan li:last-child { border-bottom: none; }
+
+.action-desc-right span { color: #2ca9e0; }
+.action-desc-right span a { text-decoration: none; color: #2ca9e0; }
+
+.action-desc-right .prize { color: #999; }
+
+.action-desc-right p { line-height: 22px; }
+
+.jf-head-title { background: #e1d9cc; border-bottom: 1px solid #e7e7e7; height: 40px; line-height: 40px; padding: 0px 16px; color: #666666; text-transform: uppercase; font-size: 16px; font-weight: bold; position: relative; }
+
+.cash-ticket-column h5,
+.cash-gift-column h5 { margin: 15px 0; font-size: 16px; line-height: 20px; font-weight: bold; }
+
+.cash-ticket-column h5 .more,
+.cash-gift-column h5 .more { color: #666666; font-size: 12px; text-decoration: none; font-weight: normal; }
+
+.cashBox, .ticket-box, .gift-box { background: #fff; border: 1px solid #e7e7e7; padding: 20px 19px 0; }
+
+.ticket-list li { width: 210px; float: left; margin-right: 20px; margin-bottom: 20px; }
+
+.ticket-list li:nth-child(5n+0),
+.gift-list:nth-child(5n+0) { margin-right: 0px !important; }
+
+.ticket-list li img { width: 210px; height: 100px; }
+
+.imgHover { background: url("../../../../../../../test.gtcdn.gaitu.cn/images/usercenter/hoverIcon.png"/*tpa=http://test.gtcdn.gaitu.cn/images/usercenter/hoverIcon.png*/) no-repeat; }
+
+.cost { text-align: center; margin-top: 10px; }
+
+.gift-box { overflow: hidden; }
+
+.gift-list { float: left; margin-right: 20px; margin-bottom: 20px; width: 210px;}
+
+.imgborder, .action-img-left { border: 1px solid #f1f1f1; width: 77px!important; height: 73px!important; }
+.action-img-left-1 { border: 1px solid #f1f1f1; width: 210px; height: 200px; float: left; }
+.action-img-left-1 img { width: 210px; height: 200px; }
+
+.action-img-left-2 { width: 210px; height: 200px; float: left; }
+.action-img-left-2 img { width: 210px; height: 100px; }
+.imghoverborder { border: 1px solid #ff6600; width: 77px!important; height: 73px!important; }
+
+.imgborder-1 { border: 1px solid #f1f1f1; width: 208px; height: 200px; }
+
+.imgborder-1:hover { border: 1px solid #ff6600; }
+.gift-list .intro { margin-top: 10px; }
+
+.gift-list .intro p { line-height: 22px; font-size: 12px; }
+
+.value, .num { color: #999; }
+
+.highlight, .value, .num { color: #ec4958; font-weight: bold; }
+
+/*积分兑换详情*/
+.jf-exchange-content { border: 1px solid #e7e7e7; background: #fff; }
+
+.jf-exchange-content h5 { background: #fafafa; height: 40px; line-height: 40px; border-bottom: 1px solid #e7e7e7; padding-left: 15px; font-size: 16px; font-weight: bold;margin:0px; }
+
+.main-content { padding: 19px; }
+.main-content-1 { height: 1852px; }
+
+
+.jf-property { border-bottom: 1px solid #e7e7e7;overflow: hidden;padding-bottom: 20px; }
+
+.jf-gallery { width: 438px; }
+
+.jf-gallery .title { font-size: 14px; font-weight: bold; margin-bottom: 14px;margin:0px;margin-bottom:10px; }
+
+.jf-gallery p { margin-bottom: 12px; color: #666; }
+
+.get-jf { color: #2ca9e0; }
+
+.jf-amount { margin-bottom: 40px; }
+
+.jf-reduce,
+.jf-increase { border: 1px solid #e7e7e7; width: 12px; height: 28px; text-align: center; line-height: 28px; background: #fafafa; display: inline-block; cursor: pointer; outline: none; }
+
+.jf-reduce:hover,
+.jf-increase:hover { text-decoration: none; border: 1px solid #ff6600; }
+
+.jf-text { width: 68px; height: 28px; text-align: center; border: 1px solid #e7e7e7; background: #fafafa; }
+
+.goods-details .desc { margin-bottom: 20px; }
+
+.goods-details .desc li { display: inline; float: left; width: 200px; height: 24px; margin-right: 20px; overflow: hidden; text-indent: 5px; line-height: 24px; white-space: nowrap; text-overflow: ellipsis; }
+
+.goods-details .apply-range { margin-bottom: 30px; }
+
+.goods-details .apply-range li { height: 22px; line-height: 22px; }
+
+.goods-details h5 { background: none; border-bottom: none; padding-left: 0; }
+
+.win-history thead { background: #f7f4ef; }
+
+.win-history thead th { border: 1px solid #e7e7e7; text-align: center; }
+
+.win-history tr { text-align: center; border-bottom: 1px solid #e7e7e7; }
+
+/*modal window*/
+.alpha { position: fixed; left: 0; top: 0; display: none; background: rgba(0, 0, 0, 0.7); z-index: 999; }
+
+.popup { position: absolute; left: 50%; top: 10%; display: none; z-index: 1000; }
+
+.popup-modal { background: #f5f5f5; }
+
+.popup-modal .popup-panel { position: relative; padding: 10px; background: #6c6c6c; }
+
+.popup-modal .close-btn { width: 16px; height: 16px; background: url("../../../../../../../test.gtcdn.gaitu.cn/images/usercenter/close-cross-icon.png"/*tpa=http://test.gtcdn.gaitu.cn/images/usercenter/close-cross-icon.png*/) no-repeat; position: absolute; right: 20px; top: 20px; cursor: pointer; }
+
+.popup-body { background: #fff; width: 518px; }
+
+.popup-lack { text-align: center; padding: 60px 0 26px; }
+
+.popup-body .prompt-msg { font-size: 14px; font-weight: bold; color: #666; line-height: 48px; margin-top: -9px; }
+
+.popup-body .prompt-msg-1 { color: #2ca9e0; display: block; margin-bottom: 30px; text-decoration: none; cursor: pointer; }
+.popup-body .prompt-msg-2 { color: #2ca9e0; display: inline-block!important; margin-bottom: 30px; text-decoration: none; cursor: pointer; }
+.popup-body .prompt-msg-2:hover { color: #f60; text-decoration: none; }
+.popup-body .prompt-msg-1:hover { color: #f60; text-decoration: none; }
+.account-info { padding: 18px 0 28px; }
+
+.account-info span { margin-right: 20px; }
+
+.get-points { color: #2ca9e0; }
+
+.popup-convert { padding: 48px 34px 26px; width: 600px !important; }
+
+.address_edit_ctn { padding: 9px 0 0 9px !important; }
+
+.GainAddress .title { margin-bottom: 15px; }
+
+.GainAddress .Gain_title { border-bottom: 2px solid #F1F1F1; margin-top: 20px; }
+
+.GainAddress .Gain_title span { float: left; font-size: 15px; font-weight: 700; }
+
+.GainAddress .Gain_title a { float: right; }
+
+.GainAddress .before li { height: 24px; line-height: 24px; margin: 2px; }
+
+.RadioBug { vertical-align: middle; }
+
+.use-new-address { margin: 16px 0; }
+
+.use-new-address .use-new-addres-btn { color: #999; line-height: 24px; cursor: pointer; display: block; }
+
+.sure-dh-btn { text-align: center; }
+
+.edit_box { position: relative; margin-bottom: 30px; background: #fffcef; border-bottom: 1px solid #ffbb76; border-top: 1px solid #ffbb76; display: none; }
+
+.arrowIcon { width: 13px; height: 6px; position: absolute; background: url("../../../../../../../test.gtcdn.gaitu.cn/images/usercenter/bg_sweet_user.png"/*tpa=http://test.gtcdn.gaitu.cn/images/usercenter/bg_sweet_user.png*/) -42px -35px; top: -6px; left: 33px; }
+
+/*抽奖*/
+.minDiv { padding: 10px; }
+
+.cDiv { width: 124px; height: 107px; float: left; margin: 0 6px 6px 0; }
+.cDiv img { width: 124px; height: 107px; }
+
+.btnDiv { width: 382px; height: 107px; float: left; margin: 0 6px 6px 0; cursor: pointer; }
+
+.playcurr { opacity: 0.4; }
+
+.award-box { margin: 30px 10px; }
+
+.award-rule { width: 410px; padding-bottom: 33px; border-right: 1px solid #e7e7e7; }
+
+.award-rule ul.rule-list { padding-right: 30px; }
+
+.award-box li { line-height: 22px; }
+
+.new-win { width: 230px; }
+
+.new-win .slide { height: 210px; overflow: hidden; }
+
+.new-win li { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+
+.award-box h6 { height: 40px; line-height: 40px; font-size: 16px; font-weight: bold; }
+
+.win-history-title { font-size: 12px; font-weight: normal; color: #2ca9e0; float: right; *margin-top: -40px; }
+
+.notice .popup-lack-tips { text-align: center; padding: 0 0 26px; }
+
+.notice .tips { margin-bottom: 24px; }
+
+.sideLetf-img { width: 67px; height: 67px; max-width: 100%; }
+.duihuan-img { width: 182px; height: 182px; max-width: 100%; }
+
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 14px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #e6e9ed;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #656d78;
+    padding: 0;
+    width: 140px;
+}
+.btn-primary {
+    background-color: #dd4250;
+    border: 0;
+    color: #fff;
+}

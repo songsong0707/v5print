@@ -1,0 +1,31 @@
+.g-main { overflow: hidden; clear: both; }
+.span12 { width: 950px; float: left; _display: inline; min-height: 1px; }
+.span3 { width: 230px; float: left; _display: inline; min-height: 1px; margin-left: 10px; }
+.xm-box { margin-bottom: 10px; background: #fff; _zoom: 1; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
+.xm-box .hd { height: 50px; background: #f8f8f8; border-bottom: 1px solid #e6e9ed; }
+.xm-box .hd .title { float: left; margin: 0; padding-left: 20px; font: 400 18px/50px arial,"Hiragino Sans GB","Microsoft YaHei",SimHei,sans-serif; color: #434a54; }
+.btn { display: inline-block; margin-bottom: 0; font-size: 14px; height: 38px; line-height: 38px; text-align: center; cursor: pointer; background-color: #fff; border: 1px solid #e6e9ed; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; color: #656d78; padding: 0; width: 140px; }
+.btn-primary { background-color: #dd4250; border: 0; color: #fff; }
+.btn-dakeLight { background-color: #ccd0d8; border: 0; color: #fff; }
+.heyue-faq-list { margin: 0; padding: 0; list-style-type: none; font-size: 12px; overflow: hidden; }
+.heyue-faq-list li { padding: 10px 10px 10px 25px; margin-bottom: -1px; border-bottom: 1px dashed #ededed; background: url("../images/dot.png"/*tpa=http://test.v5print.com/Areas/Shop/Themes/Default/Content/images/dot.png*/) no-repeat 15px 18px; }
+
+.picturenav { width: 920px; overflow: hidden; margin: 10px auto; padding: 10px; }
+.smallpicture { float: left; width: 220px; overflow: hidden; }
+.templatepicture { text-align: center; padding: 10px; }
+.red { color: #dd4250; }
+
+#shangchuang { text-align: left; overflow: hidden; padding-left: 10px; }
+#fsUploadProgress { width: auto; margin-bottom: 10px; margin-right: 10px; }
+.progressWrapper { overflow: hidden; }
+.progressContainer { margin-top: 10px; padding: 8px; border: solid 1px #E8E8E8; background-color: #F7F7F7; overflow: hidden; }
+.progressName { font-size: 8pt; font-weight: 700; color: #555; width: 325px; height: 14px; text-align: left; white-space: nowrap; padding-bottom: 10px; overflow: hidden; }
+.progressBarComplete, .progressBarError { font-size: 0; width: 0%; height: 10px; background-color: #ff6600; margin-top: 5px; }
+.progressBarInProgress { border: 1px solid #e7e7e7; padding: 2px; margin-top: 10px; background-color: #fff; }
+.progressBarInProgress2 { background-color: #ff6600; height: 10px; z-index: 10; }
+.progressBarComplete { width: 100%; background-color: green; visibility: hidden; }
+.progressBarError { width: 100%; background-color: red; visibility: hidden; }
+.progressBarStatus { margin-top: 2px; width: 337px; text-align: left; white-space: nowrap; }
+a.progressCancel { font-size: 0; display: block; height: 14px; width: 14px; background-image: url("../../../../../../Scripts/swfupload/cancelbutton.gif"/*tpa=http://test.v5print.com/Scripts/swfupload/cancelbutton.gif*/); float: right; }
+a.progressCancel:hover { background-position: 0px 0px; }
+.swfupload { margin-left: 10px; }

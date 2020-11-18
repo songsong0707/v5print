@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>测试-名片测试-V5print-印刷商城系统</title>
+        <meta name="keywords" content="V5print-印刷商城系统,名片测试,测试">
+        <meta name="description" content="测试-名片测试-V5print-印刷商城系统">
+        
+    <link href="../../Areas/Shop/Themes/Default/Content/css/common.css" tppabs="http://test.v5print.com/Areas/Shop/Themes/Default/Content/css/common.css" rel="stylesheet" />
+    <link href="../../Areas/Shop/Themes/Default/Content/css/index.css" tppabs="http://test.v5print.com/Areas/Shop/Themes/Default/Content/css/index.css" rel="stylesheet" />
+    <script src="../../Areas/Shop/Themes/Default/Content/Scripts/jquery-1.11.1.min.js-v=20151030" tppabs="http://test.v5print.com/Areas/Shop/Themes/Default/Content/Scripts/jquery-1.11.1.min.js?v=20151030" type="text/javascript" ></script>
+    <script type="text/javascript">var $V5print = { BasePath: '/', CurrentArea: '' };</script>
+    <link href="../../Scripts/msgbox/css/msgbox.css" tppabs="http://test.v5print.com/Scripts/msgbox/css/msgbox.css" rel="stylesheet" type="text/css" />
+    <script src="../../Scripts/msgbox/js/msgbox.js" tppabs="http://test.v5print.com/Scripts/msgbox/js/msgbox.js" type="text/javascript"></script>
+    <script src="../../Scripts/common.js" tppabs="http://test.v5print.com/Scripts/common.js"></script>
+    
+    
+    <link href="../../Scripts/jquery.mCustomScrollbar/jquery.mCustomScrollbar.css" tppabs="http://test.v5print.com/Scripts/jquery.mCustomScrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" />
+    <link href="../../Areas/Shop/Themes/Default/Content/css/editor1.css-v=20160908.css" tppabs="http://test.v5print.com/Areas/Shop/Themes/Default/Content/css/editor1.css?v=20160908" rel="stylesheet" />
+
+</head>
+<body>
+    <!--[if lt IE 8]>
+          <p class="chromeframe">发现您正在使用旧的浏览器. 请<a href="javascript:if(confirm('http://browsehappy.com/  \n\n���ļ�δ�� Teleport Pro ���أ���Ϊ ��λ����ʼ��ַ�����õı߽���������·���С�  \n\n����Ҫ�ӷ�����������?'))window.location='http://browsehappy.com/'" tppabs="http://browsehappy.com/" target="_blank">升级您的浏览器</a> 或者 <a href="javascript:if(confirm('http://www.google.cn/intl/zh-CN/chrome/browser/  \n\n���ļ�δ�� Teleport Pro ���أ���Ϊ ��λ����ʼ��ַ�����õı߽���������·���С�  \n\n����Ҫ�ӷ�����������?'))window.location='http://www.google.cn/intl/zh-CN/chrome/browser/'" tppabs="http://www.google.cn/intl/zh-CN/chrome/browser/" target="_blank">激活谷歌浏览器内嵌框架</a>提高您的浏览体验.</p>
+    <![endif]-->
+    
+
+    <div class="editor-create">
+        <div class="editor-header1">
+            <div class="title">
+                名片测试设计
+            </div>
+            <ul class="right">
+                <li><a href="../../Account/Login-returnUrl=/UserCenter/MyDocuments.htm" tppabs="http://test.v5print.com/UserCenter/MyDocuments" target="_blank"><span class="icon icon-me"></span>我的模板</a></li>
+<li>
+        <a href="javascript:if(confirm('http://wpa.qq.com/msgrd?v=3&uin=3092117904&site=qq&menu=yes  \n\n���ļ�δ�� Teleport Pro ���أ���Ϊ ��λ����ʼ��ַ�����õı߽���������·���С�  \n\n����Ҫ�ӷ�����������?'))window.location='http://wpa.qq.com/msgrd?v=3&uin=3092117904&site=qq&menu=yes'" tppabs="http://wpa.qq.com/msgrd?v=3&uin=3092117904&site=qq&menu=yes" target="_blank"><span class="icon icon-qq"></span>在线客服</a>
+</li>
+
+
+            </ul>
+        </div>
+
+        <div class="editor-header">
+            <ul class="center tab">
+                <li class="active" id="tab-1">
+                    <div><span class="icon eqf-top-bg"></span><span>背景</span></div>
+                    <i class="arrow ng-hide"></i></li>
+                <li id="tab-2">
+                    <div><span class="icon eqf-top-pic"></span><span>图片</span></div>
+                    <i class="arrow ng-hide"></i></li>
+                <li id="tab-3" style="display: none;">
+                    <div><span class="icon eqf-QRcode eqf-top-qr"></span><span>二维码</span></div>
+                    <i class="arrow ng-hide"></i></li>
+            </ul>
+            <ul class="center trigger">
+                <li onclick="AddNewText()"><span class="icon eqf-top-word"></span><span>文字</span></li>
+            </ul>
+        </div>
+
+        <div class="editor-left content-1 editor-bg">
+            <div class="content" style="bottom: 70px;">
+                <div id="sys-bg-list" class="item">
+                    <div class="item-list">
+                        <ul style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="editor-left content-2 editor-image" style="display: none;">
+            <div class="content" style="bottom: 0;">
+                <div class="category top-category">
+                    <ul>
+                        <li><a href="#my-logo-list">我的图片</a></li>
+                        <li><a href="#sys-logo-list">素材库</a></li>
+                    </ul>
+                </div>
+                <div id="my-logo-list" class="item" style="top: 51px;">
+                    <div class="item-list my-logo-list" style="position: absolute; bottom: 50px;">
+                        <ul style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
+                        </ul>
+                    </div>
+                    <div class="editor-upload" id="pickfiles" style="z-index: 1;">
+                        <div id="upload_progress" class="progress"></div>
+                        <span class="eqf-update"></span><span id="upload_font">上传</span>
+                        <input type="file">
+                        <div id="upload_mask" class="mask"></div>
+                    </div>
+                </div>
+                <div id="sys-logo-list" class="item" style="top: 51px;">
+                    <div class="item-list">
+                        <ul style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="editor-workspace pagebox">
+                <div id='l-page-1' class="pagec" style='width:500px;height:304px;'>
+                    <div class="bg-big pageBackground" style="width:500px; height:304px;background: url(/Upload/Design/Backgrounds/Thumbs/201701/201701111533279307.png) no-repeat;">
+                        <input type="hidden" value='/Upload/Design/Backgrounds/Thumbs/201701/201701111533279307.png' />
+                    </div>
+                    <div class="pageContent"  pagenumber="1" style="position:absolute;width:500px; height:304px;">
+                                                    <img src="" id='l-page-1-text-0' class="preimg txt" style='left: 111px; top: 106px;z-index: 201;' text='阿里印（武汉）科技有限公司'  x='111' y='106' w="238" h="19" rc='rgb(0, 0, 0)' cc='0-0-0-100' s='0' fn='方正粗宋简体' fz='18' fw='Normal' fs='Normal' td='Vertical' tt='87' z='201' ht='self' hv='left' vt='self' vv='middle' enable="1"/>
+                            <img src="" id='l-page-1-text-1' class="preimg txt" style='left: 150px; top: 152px;z-index: 202;' text='刘小明'  x='150' y='152' w="86" h="28" rc='rgb(0, 0, 0)' cc='0-0-0-100' s='0' fn='方正粗宋简体' fz='28' fw='Normal' fs='Normal' td='Vertical' tt='88' z='202' ht='self' hv='left' vt='self' vv='top' enable="1"/>
+                            <img src="" id='l-page-1-text-2' class="preimg txt" style='left: 245px; top: 167px;z-index: 203;' text='销售经理'  x='245' y='167' w="49" h="12" rc='rgb(0, 0, 0)' cc='0-0-0-100' s='0' fn='方正粗宋简体' fz='12' fw='Normal' fs='Normal' td='Vertical' tt='89' z='203' ht='self' hv='left' vt='self' vv='top' enable="1"/>
+                            <img src="" id='l-page-1-text-3' class="preimg txt" style='left: 145px; top: 194px;z-index: 205;' text='手机：15623654587'  x='145' y='194' w="171" h="19" rc='rgb(0, 0, 0)' cc='0-0-0-100' s='0' fn='方正粗宋简体' fz='18' fw='Normal' fs='Normal' td='Vertical' tt='88' z='205' ht='self' hv='left' vt='self' vv='middle' enable="1"/>
+                            <img src="" id='l-page-1-text-4' class="preimg txt" style='left: 127px; top: 229px;z-index: 204;' text='地址：湖北武汉洪山区国光大道888好'  x='127' y='229' w="206" h="12" rc='rgb(0, 0, 0)' cc='0-0-0-100' s='0' fn='方正粗宋简体' fz='12' fw='Normal' fs='Normal' td='Vertical' tt='91' z='204' ht='self' hv='left' vt='self' vv='middle' enable="1"/>
+                    </div>
+                    <div class="range warn" style="left:5.434783px;top:5.434783px; width:489.1304px; height:293.1304px;">
+                    </div>
+                    <div class="range range-big" style="width:500px; height:304px;"></div>
+                </div>
+                <div id='l-page-2' class="pagec" style='width:500px;height:304px;'>
+                    <div class="bg-big pageBackground" style="width:500px; height:304px;background: url(/Upload/Design/Backgrounds/Thumbs/201701/201701111533483374.png) no-repeat;">
+                        <input type="hidden" value='/Upload/Design/Backgrounds/Thumbs/201701/201701111533483374.png' />
+                    </div>
+                    <div class="pageContent"  pagenumber="2" style="position:absolute;width:500px; height:304px;">
+                                                    <img src="" id='l-page-2-text-0' class="preimg txt" style='left: 214px; top: 129px;z-index: 201;' text='经营范围'  x='214' y='129' w="73" h="19" rc='rgb(0, 0, 0)' cc='0-0-0-100' s='0' fn='方正粗宋简体' fz='18' fw='Normal' fs='Normal' td='Vertical' tt='87' z='201' ht='self' hv='left' vt='self' vv='middle' enable="1"/>
+                            <img src="" id='l-page-2-text-1' class="preimg txt" style='left: 121px; top: 163px;z-index: 202;' text='名片在线设计、宣传单在线印刷'  x='121' y='163' w="258" h="19" rc='rgb(0, 0, 0)' cc='0-0-0-100' s='0' fn='方正粗宋简体' fz='18' fw='Normal' fs='Normal' td='Vertical' tt='91' z='202' ht='self' hv='left' vt='self' vv='middle' enable="1"/>
+                    </div>
+                    <div class="range warn" style="left:5.434783px;top:5.434783px; width:489.1304px; height:293.1304px;">
+                    </div>
+                    <div class="range range-big" style="width:500px; height:304px;"></div>
+                </div>
+        </div>
+
+        <div class="editor-side-menu">
+            <ul class="side-menu-wrap">
+                <li><a class="feedback" style="font-size: 12px">对齐</a></li>
+                <li onclick="HoriLeft()" class="hint--left" data-hint="左对齐（至少选择两个元素）">
+                    <div class="icon alignleft" style="font-size: 12px"></div>
+                </li>
+                <li onclick="HoriRight();" class="hint--left" data-hint="右对齐（至少选择两个元素）">
+                    <div class="icon alignright"></div>
+                </li>
+                <li onclick="VertTop()" class="hint--left" data-hint="顶对齐（至少选择两个元素）">
+                    <div class="icon aligntop"></div>
+                </li>
+                <li onclick="VertBottom()" class="hint--left" data-hint="底对齐（至少选择两个元素）">
+                    <div class="icon alignbottom"></div>
+                </li>
+                <li onclick="VertMiddle()" class="hint--left" data-hint="水平居中（至少选择两个元素）">
+                    <div class="icon aligncenter"></div>
+                </li>
+                <li onclick="HoriCenter()" class="hint--left" data-hint="垂直居中（至少选择两个元素）">
+                    <div class="icon alignmiddle"></div>
+                </li>
+                <li onclick="HoriAverage()" class="hint--left" data-hint="水平平均分布（至少选择三个元素）">
+                    <div class="icon alignhori"></div>
+                </li>
+                <li onclick="VertAverage()" class="hint--left" data-hint="垂直平均分布（至少选择三个元素）">
+                    <div class="icon alignvert"></div>
+                </li>
+                <li onclick="SetLayer('up')" class="hint--left" data-hint="向上一层">
+                    <div class="icon index-plus"></div>
+                </li>
+                <li onclick="SetLayer('down')" class="hint--left" data-hint="向下一层">
+                    <div class="icon index-reduce"></div>
+                </li>
+                <li onclick="DeleteElement()" class="hint--left" data-hint="删除选中的元素">
+                    <div class="icon item-delete"></div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="editor-page">
+            <div class="content">
+                <div style="height: 40px; display: block; line-height: 40px; padding-left: 10px; color: #fff;  border-bottom: 1px solid #333;">页数</div>
+                <ul style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
+                        <li class="page-thumb" id='page-title-1' onclick='SelectPage(1)'>
+                            <div class="num"><span class="ng-binding">1</span></div>
+                            <div class="cover" id="page-thumb-1">
+                                <img src="../../Upload/Design/TplFiles/Thumbs/201701/201701111543031918.png" tppabs="http://test.v5print.com/Upload/Design/TplFiles/Thumbs/201701/201701111543031918.png" />
+                            </div>
+                        </li>
+                        <li class="page-thumb" id='page-title-2' onclick='SelectPage(2)'>
+                            <div class="num"><span class="ng-binding">2</span></div>
+                            <div class="cover" id="page-thumb-2">
+                                <img src="../../Upload/Design/TplFiles/Thumbs/201701/201701111543032230.png" tppabs="http://test.v5print.com/Upload/Design/TplFiles/Thumbs/201701/201701111543032230.png" />
+                            </div>
+                        </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="editor-set-component">
+            <div class="container font">
+                <div class="right">
+                    <span class="attr-text">文字</span>
+                    <div class="editor-input-text attr-text" style="width: 142px;">
+                        <div class="ng-isolate-scope">
+                            <textarea id="textvalue" style="width: 130px; height: 50px; padding: 6px; background-color: #666; border: 1px solid #333; color: #fff;"></textarea>
+                        </div>
+                    </div>
+                    <span class="attr-text">颜色</span>
+                    <div class="editor-input-color attr-text" onclick="LoadColorPicker();" id="ColorPickerBox" style="width: 142px; background-color: rgb(0, 0, 0);">
+                        <div class="ng-isolate-scope" style="width: 114px;">
+                        </div>
+                        <a class="icon eqf-bg" onclick="LoadColorPicker();"></a>
+                    </div>
+                    <span class="attr-text">字体</span>
+                    <div class="editor-drop-down attr-text" style="width: 144px;">
+                        <input value="微软雅黑" id="textfamily" class="fontfamily" style="font-family: 'Microsoft YaHei'; width: 108px;" onclick="ShowFontFamilyList()">
+                        <div class="mask fontfamily" style="width: 142px;" onclick="ShowFontFamilyList()">
+                            <span class="icon more eqf-clickmore"></span>
+                        </div>
+                        <div class="editor-drop-down-list" id="fontlist" style="right: 0px; top: 38px;">
+                            <div class="arrow">
+                            </div>
+                            <div class="list">
+                                <div class="scroll" style="height: 300px;">
+                                    <ul style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
+                                            <li class="editor-target ng-binding" data="黑体"  style="font-family: 黑体;">黑体</li>
+                                            <li class="editor-target ng-binding" data="方正北魏楷书简体"  style="font-family: 方正北魏楷书简体;">方正北魏楷书简体</li>
+                                            <li class="editor-target ng-binding" data="方正超粗黑简体"  style="font-family: 方正超粗黑简体;">方正超粗黑简体</li>
+                                            <li class="editor-target ng-binding" data="方正粗倩简体"  style="font-family: 方正粗倩简体;">方正粗倩简体</li>
+                                            <li class="editor-target ng-binding" data="方正粗宋简体"  style="font-family: 方正粗宋简体;">方正粗宋简体</li>
+                                            <li class="editor-target ng-binding" data="方正彩云简体"  style="font-family: 方正彩云简体;">方正彩云简体</li>
+                                            <li class="editor-target ng-binding" data="方正古隶简体"  style="font-family: 方正古隶简体;">方正古隶简体</li>
+                                            <li class="editor-target ng-binding" data="方正黄草简体"  style="font-family: 方正黄草简体;">方正黄草简体</li>
+                                            <li class="editor-target ng-binding" data="方正华隶简体"  style="font-family: 方正华隶简体;">方正华隶简体</li>
+                                            <li class="editor-target ng-binding" data="方正琥珀简体"  style="font-family: 方正琥珀简体;">方正琥珀简体</li>
+                                            <li class="editor-target ng-binding" data="方正剪纸简体"  style="font-family: 方正剪纸简体;">方正剪纸简体</li>
+                                            <li class="editor-target ng-binding" data="方正隶变简体"  style="font-family: 方正隶变简体;">方正隶变简体</li>
+                                            <li class="editor-target ng-binding" data="方正美黑简体"  style="font-family: 方正美黑简体;">方正美黑简体</li>
+                                            <li class="editor-target ng-binding" data="方正喵呜体"  style="font-family: 方正喵呜体;">方正喵呜体</li>
+                                            <li class="editor-target ng-binding" data="方正平和简体"  style="font-family: 方正平和简体;">方正平和简体</li>
+                                            <li class="editor-target ng-binding" data="方正胖娃简体"  style="font-family: 方正胖娃简体;">方正胖娃简体</li>
+                                            <li class="editor-target ng-binding" data="方正启体简体"  style="font-family: 方正启体简体;">方正启体简体</li>
+                                            <li class="editor-target ng-binding" data="方正少儿简体"  style="font-family: 方正少儿简体;">方正少儿简体</li>
+                                            <li class="editor-target ng-binding" data="方正水黑简体"  style="font-family: 方正水黑简体;">方正水黑简体</li>
+                                            <li class="editor-target ng-binding" data="方正瘦金书简体"  style="font-family: 方正瘦金书简体;">方正瘦金书简体</li>
+                                            <li class="editor-target ng-binding" data="方正宋一简体"  style="font-family: 方正宋一简体;">方正宋一简体</li>
+                                            <li class="editor-target ng-binding" data="方正特粗光辉简体"  style="font-family: 方正特粗光辉简体;">方正特粗光辉简体</li>
+                                            <li class="editor-target ng-binding" data="方正卡通简体"  style="font-family: 方正卡通简体;">方正卡通简体</li>
+                                            <li class="editor-target ng-binding" data="方正胖头鱼简体"  style="font-family: 方正胖头鱼简体;">方正胖头鱼简体</li>
+                                            <li class="editor-target ng-binding" data="方正硬笔行书简体"  style="font-family: 方正硬笔行书简体;">方正硬笔行书简体</li>
+                                            <li class="editor-target ng-binding" data="方正艺黑简体"  style="font-family: 方正艺黑简体;">方正艺黑简体</li>
+                                            <li class="editor-target ng-binding" data="方正姚体简体"  style="font-family: 方正姚体简体;">方正姚体简体</li>
+                                            <li class="editor-target ng-binding" data="方正姚体"  style="font-family: 方正姚体;">方正姚体</li>
+                                            <li class="editor-target ng-binding" data="方正幼线简体"  style="font-family: 方正幼线简体;">方正幼线简体</li>
+                                            <li class="editor-target ng-binding" data="方正毡笔黑简体"  style="font-family: 方正毡笔黑简体;">方正毡笔黑简体</li>
+                                            <li class="editor-target ng-binding" data="方正稚艺简体"  style="font-family: 方正稚艺简体;">方正稚艺简体</li>
+                                            <li class="editor-target ng-binding" data="方正中倩简体"  style="font-family: 方正中倩简体;">方正中倩简体</li>
+                                            <li class="editor-target ng-binding" data="仿宋_GB2312"  style="font-family: 仿宋_GB2312;">仿宋_GB2312</li>
+                                            <li class="editor-target ng-binding" data="楷体_GB2312"  style="font-family: 楷体_GB2312;">楷体_GB2312</li>
+                                            <li class="editor-target ng-binding" data="华文楷体"  style="font-family: 华文楷体;">华文楷体</li>
+                                            <li class="editor-target ng-binding" data="华文行楷"  style="font-family: 华文行楷;">华文行楷</li>
+                                            <li class="editor-target ng-binding" data="方正粗活意简体"  style="font-family: 方正粗活意简体;">方正粗活意简体</li>
+                                            <li class="editor-target ng-binding" data="方正风雅宋简体"  style="font-family: 方正风雅宋简体;">方正风雅宋简体</li>
+                                            <li class="editor-target ng-binding" data="方正粗倩_GBK"  style="font-family: 方正粗倩_GBK;">方正粗倩_GBK</li>
+                                            <li class="editor-target ng-binding" data="汉仪娃娃篆简"  style="font-family: 汉仪娃娃篆简;">汉仪娃娃篆简</li>
+                                            <li class="editor-target ng-binding" data="汉仪太极体简"  style="font-family: 汉仪太极体简;">汉仪太极体简</li>
+                                            <li class="editor-target ng-binding" data="汉仪秀英体简"  style="font-family: 汉仪秀英体简;">汉仪秀英体简</li>
+                                            <li class="editor-target ng-binding" data="迷你简卡通"  style="font-family: 迷你简卡通;">迷你简卡通</li>
+                                            <li class="editor-target ng-binding" data="方正舒体"  style="font-family: 方正舒体;">方正舒体</li>
+                                            <li class="editor-target ng-binding" data="方正苏新诗柳楷简体"  style="font-family: 方正苏新诗柳楷简体;">方正苏新诗柳楷简体</li>
+                                            <li class="editor-target ng-binding" data="方正水柱简体"  style="font-family: 方正水柱简体;">方正水柱简体</li>
+                                            <li class="editor-target ng-binding" data="方正铁筋隶书简体"  style="font-family: 方正铁筋隶书简体;">方正铁筋隶书简体</li>
+                                            <li class="editor-target ng-binding" data="方正祥隶简体"  style="font-family: 方正祥隶简体;">方正祥隶简体</li>
+                                            <li class="editor-target ng-binding" data="方正细倩简体"  style="font-family: 方正细倩简体;">方正细倩简体</li>
+                                            <li class="editor-target ng-binding" data="方正细珊瑚简体"  style="font-family: 方正细珊瑚简体;">方正细珊瑚简体</li>
+                                            <li class="editor-target ng-binding" data="方正小篆体"  style="font-family: 方正小篆体;">方正小篆体</li>
+                                            <li class="editor-target ng-binding" data="方正硬笔楷书简体"  style="font-family: 方正硬笔楷书简体;">方正硬笔楷书简体</li>
+                                            <li class="editor-target ng-binding" data="Arial"  style="font-family: Arial;">Arial</li>
+                                            <li class="editor-target ng-binding" data="Arial Italic"  style="font-family: Arial Italic;">Arial Italic</li>
+                                            <li class="editor-target ng-binding" data="Arial Bold"  style="font-family: Arial Bold;">Arial Bold</li>
+                                            <li class="editor-target ng-binding" data="Arial Bold Italic"  style="font-family: Arial Bold Italic;">Arial Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="Courier New"  style="font-family: Courier New;">Courier New</li>
+                                            <li class="editor-target ng-binding" data="Courier New Italic"  style="font-family: Courier New Italic;">Courier New Italic</li>
+                                            <li class="editor-target ng-binding" data="Courier New Bold"  style="font-family: Courier New Bold;">Courier New Bold</li>
+                                            <li class="editor-target ng-binding" data="Courier New Bold Italic"  style="font-family: Courier New Bold Italic;">Courier New Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="DaunPenh"  style="font-family: DaunPenh;">DaunPenh</li>
+                                            <li class="editor-target ng-binding" data="DokChampa"  style="font-family: DokChampa;">DokChampa</li>
+                                            <li class="editor-target ng-binding" data="Estrangelo Edessa"  style="font-family: Estrangelo Edessa;">Estrangelo Edessa</li>
+                                            <li class="editor-target ng-binding" data="Euphemia"  style="font-family: Euphemia;">Euphemia</li>
+                                            <li class="editor-target ng-binding" data="Gautami"  style="font-family: Gautami;">Gautami</li>
+                                            <li class="editor-target ng-binding" data="Impact"  style="font-family: Impact;">Impact</li>
+                                            <li class="editor-target ng-binding" data="Iskoola Pota"  style="font-family: Iskoola Pota;">Iskoola Pota</li>
+                                            <li class="editor-target ng-binding" data="Kalinga"  style="font-family: Kalinga;">Kalinga</li>
+                                            <li class="editor-target ng-binding" data="Kartika"  style="font-family: Kartika;">Kartika</li>
+                                            <li class="editor-target ng-binding" data="Latha"  style="font-family: Latha;">Latha</li>
+                                            <li class="editor-target ng-binding" data="Lucida Console"  style="font-family: Lucida Console;">Lucida Console</li>
+                                            <li class="editor-target ng-binding" data="Malgun Gothic"  style="font-family: Malgun Gothic;">Malgun Gothic</li>
+                                            <li class="editor-target ng-binding" data="Malgun Gothic Bold"  style="font-family: Malgun Gothic Bold;">Malgun Gothic Bold</li>
+                                            <li class="editor-target ng-binding" data="Mangal"  style="font-family: Mangal;">Mangal</li>
+                                            <li class="editor-target ng-binding" data="Microsoft Himalaya"  style="font-family: Microsoft Himalaya;">Microsoft Himalaya</li>
+                                            <li class="editor-target ng-binding" data="Microsoft JhengHei"  style="font-family: Microsoft JhengHei;">Microsoft JhengHei</li>
+                                            <li class="editor-target ng-binding" data="Microsoft JhengHei Bold"  style="font-family: Microsoft JhengHei Bold;">Microsoft JhengHei Bold</li>
+                                            <li class="editor-target ng-binding" data="Microsoft YaHei"  style="font-family: Microsoft YaHei;">Microsoft YaHei</li>
+                                            <li class="editor-target ng-binding" data="Microsoft YaHei Bold"  style="font-family: Microsoft YaHei Bold;">Microsoft YaHei Bold</li>
+                                            <li class="editor-target ng-binding" data="Mongolian Baiti"  style="font-family: Mongolian Baiti;">Mongolian Baiti</li>
+                                            <li class="editor-target ng-binding" data="MV Boli"  style="font-family: MV Boli;">MV Boli</li>
+                                            <li class="editor-target ng-binding" data="Nyala"  style="font-family: Nyala;">Nyala</li>
+                                            <li class="editor-target ng-binding" data="Plantagenet Cherokee"  style="font-family: Plantagenet Cherokee;">Plantagenet Cherokee</li>
+                                            <li class="editor-target ng-binding" data="Raavi"  style="font-family: Raavi;">Raavi</li>
+                                            <li class="editor-target ng-binding" data="Segoe Script"  style="font-family: Segoe Script;">Segoe Script</li>
+                                            <li class="editor-target ng-binding" data="Segoe Script Bold"  style="font-family: Segoe Script Bold;">Segoe Script Bold</li>
+                                            <li class="editor-target ng-binding" data="Segoe UI"  style="font-family: Segoe UI;">Segoe UI</li>
+                                            <li class="editor-target ng-binding" data="Segoe UI Bold"  style="font-family: Segoe UI Bold;">Segoe UI Bold</li>
+                                            <li class="editor-target ng-binding" data="Segoe UI Italic"  style="font-family: Segoe UI Italic;">Segoe UI Italic</li>
+                                            <li class="editor-target ng-binding" data="Segoe UI Bold Italic"  style="font-family: Segoe UI Bold Italic;">Segoe UI Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="Shruti"  style="font-family: Shruti;">Shruti</li>
+                                            <li class="editor-target ng-binding" data="SimSun-ExtB"  style="font-family: SimSun-ExtB;">SimSun-ExtB</li>
+                                            <li class="editor-target ng-binding" data="Sylfaen"  style="font-family: Sylfaen;">Sylfaen</li>
+                                            <li class="editor-target ng-binding" data="Times New Roman"  style="font-family: Times New Roman;">Times New Roman</li>
+                                            <li class="editor-target ng-binding" data="Times New Roman Italic"  style="font-family: Times New Roman Italic;">Times New Roman Italic</li>
+                                            <li class="editor-target ng-binding" data="Times New Roman Bold"  style="font-family: Times New Roman Bold;">Times New Roman Bold</li>
+                                            <li class="editor-target ng-binding" data="Times New Roman Bold Italic"  style="font-family: Times New Roman Bold Italic;">Times New Roman Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="Tunga"  style="font-family: Tunga;">Tunga</li>
+                                            <li class="editor-target ng-binding" data="Vrinda"  style="font-family: Vrinda;">Vrinda</li>
+                                            <li class="editor-target ng-binding" data="Microsoft Yi Baiti"  style="font-family: Microsoft Yi Baiti;">Microsoft Yi Baiti</li>
+                                            <li class="editor-target ng-binding" data="Angsana New"  style="font-family: Angsana New;">Angsana New</li>
+                                            <li class="editor-target ng-binding" data="Angsana New Italic"  style="font-family: Angsana New Italic;">Angsana New Italic</li>
+                                            <li class="editor-target ng-binding" data="Angsana New Bold"  style="font-family: Angsana New Bold;">Angsana New Bold</li>
+                                            <li class="editor-target ng-binding" data="Angsana New Bold Italic"  style="font-family: Angsana New Bold Italic;">Angsana New Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="Cordia New"  style="font-family: Cordia New;">Cordia New</li>
+                                            <li class="editor-target ng-binding" data="Cordia New Italic"  style="font-family: Cordia New Italic;">Cordia New Italic</li>
+                                            <li class="editor-target ng-binding" data="Cordia New Bold"  style="font-family: Cordia New Bold;">Cordia New Bold</li>
+                                            <li class="editor-target ng-binding" data="Cordia New Bold Italic"  style="font-family: Cordia New Bold Italic;">Cordia New Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="Gisha"  style="font-family: Gisha;">Gisha</li>
+                                            <li class="editor-target ng-binding" data="Gisha Bold"  style="font-family: Gisha Bold;">Gisha Bold</li>
+                                            <li class="editor-target ng-binding" data="Leelawadee"  style="font-family: Leelawadee;">Leelawadee</li>
+                                            <li class="editor-target ng-binding" data="Leelawadee Bold"  style="font-family: Leelawadee Bold;">Leelawadee Bold</li>
+                                            <li class="editor-target ng-binding" data="Microsoft Uighur"  style="font-family: Microsoft Uighur;">Microsoft Uighur</li>
+                                            <li class="editor-target ng-binding" data="MoolBoran"  style="font-family: MoolBoran;">MoolBoran</li>
+                                            <li class="editor-target ng-binding" data="Symbol"  style="font-family: Symbol;">Symbol</li>
+                                            <li class="editor-target ng-binding" data="Wingdings"  style="font-family: Wingdings;">Wingdings</li>
+                                            <li class="editor-target ng-binding" data="Andalus"  style="font-family: Andalus;">Andalus</li>
+                                            <li class="editor-target ng-binding" data="Arabic Typesetting"  style="font-family: Arabic Typesetting;">Arabic Typesetting</li>
+                                            <li class="editor-target ng-binding" data="Simplified Arabic"  style="font-family: Simplified Arabic;">Simplified Arabic</li>
+                                            <li class="editor-target ng-binding" data="Simplified Arabic Bold"  style="font-family: Simplified Arabic Bold;">Simplified Arabic Bold</li>
+                                            <li class="editor-target ng-binding" data="Simplified Arabic Fixed"  style="font-family: Simplified Arabic Fixed;">Simplified Arabic Fixed</li>
+                                            <li class="editor-target ng-binding" data="Traditional Arabic"  style="font-family: Traditional Arabic;">Traditional Arabic</li>
+                                            <li class="editor-target ng-binding" data="Traditional Arabic Bold"  style="font-family: Traditional Arabic Bold;">Traditional Arabic Bold</li>
+                                            <li class="editor-target ng-binding" data="Aharoni Bold"  style="font-family: Aharoni Bold;">Aharoni Bold</li>
+                                            <li class="editor-target ng-binding" data="David"  style="font-family: David;">David</li>
+                                            <li class="editor-target ng-binding" data="David Bold"  style="font-family: David Bold;">David Bold</li>
+                                            <li class="editor-target ng-binding" data="FrankRuehl"  style="font-family: FrankRuehl;">FrankRuehl</li>
+                                            <li class="editor-target ng-binding" data="Levenim MT"  style="font-family: Levenim MT;">Levenim MT</li>
+                                            <li class="editor-target ng-binding" data="Levenim MT Bold"  style="font-family: Levenim MT Bold;">Levenim MT Bold</li>
+                                            <li class="editor-target ng-binding" data="Miriam"  style="font-family: Miriam;">Miriam</li>
+                                            <li class="editor-target ng-binding" data="Miriam Fixed"  style="font-family: Miriam Fixed;">Miriam Fixed</li>
+                                            <li class="editor-target ng-binding" data="Narkisim"  style="font-family: Narkisim;">Narkisim</li>
+                                            <li class="editor-target ng-binding" data="Rod"  style="font-family: Rod;">Rod</li>
+                                            <li class="editor-target ng-binding" data="FangSong"  style="font-family: FangSong;">FangSong</li>
+                                            <li class="editor-target ng-binding" data="SimHei"  style="font-family: SimHei;">SimHei</li>
+                                            <li class="editor-target ng-binding" data="KaiTi"  style="font-family: KaiTi;">KaiTi</li>
+                                            <li class="editor-target ng-binding" data="AngsanaUPC"  style="font-family: AngsanaUPC;">AngsanaUPC</li>
+                                            <li class="editor-target ng-binding" data="AngsanaUPC Italic"  style="font-family: AngsanaUPC Italic;">AngsanaUPC Italic</li>
+                                            <li class="editor-target ng-binding" data="AngsanaUPC Bold"  style="font-family: AngsanaUPC Bold;">AngsanaUPC Bold</li>
+                                            <li class="editor-target ng-binding" data="AngsanaUPC Bold Italic"  style="font-family: AngsanaUPC Bold Italic;">AngsanaUPC Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="Browallia New"  style="font-family: Browallia New;">Browallia New</li>
+                                            <li class="editor-target ng-binding" data="Browallia New Italic"  style="font-family: Browallia New Italic;">Browallia New Italic</li>
+                                            <li class="editor-target ng-binding" data="Browallia New Bold"  style="font-family: Browallia New Bold;">Browallia New Bold</li>
+                                            <li class="editor-target ng-binding" data="Browallia New Bold Italic"  style="font-family: Browallia New Bold Italic;">Browallia New Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="BrowalliaUPC"  style="font-family: BrowalliaUPC;">BrowalliaUPC</li>
+                                            <li class="editor-target ng-binding" data="BrowalliaUPC Italic"  style="font-family: BrowalliaUPC Italic;">BrowalliaUPC Italic</li>
+                                            <li class="editor-target ng-binding" data="BrowalliaUPC Bold"  style="font-family: BrowalliaUPC Bold;">BrowalliaUPC Bold</li>
+                                            <li class="editor-target ng-binding" data="BrowalliaUPC Bold Italic"  style="font-family: BrowalliaUPC Bold Italic;">BrowalliaUPC Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="CordiaUPC"  style="font-family: CordiaUPC;">CordiaUPC</li>
+                                            <li class="editor-target ng-binding" data="CordiaUPC Bold"  style="font-family: CordiaUPC Bold;">CordiaUPC Bold</li>
+                                            <li class="editor-target ng-binding" data="CordiaUPC Bold Italic"  style="font-family: CordiaUPC Bold Italic;">CordiaUPC Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="CordiaUPC Italic"  style="font-family: CordiaUPC Italic;">CordiaUPC Italic</li>
+                                            <li class="editor-target ng-binding" data="DilleniaUPC"  style="font-family: DilleniaUPC;">DilleniaUPC</li>
+                                            <li class="editor-target ng-binding" data="DilleniaUPC Italic"  style="font-family: DilleniaUPC Italic;">DilleniaUPC Italic</li>
+                                            <li class="editor-target ng-binding" data="DilleniaUPC Bold"  style="font-family: DilleniaUPC Bold;">DilleniaUPC Bold</li>
+                                            <li class="editor-target ng-binding" data="DilleniaUPC Bold Italic"  style="font-family: DilleniaUPC Bold Italic;">DilleniaUPC Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="EucrosiaUPC"  style="font-family: EucrosiaUPC;">EucrosiaUPC</li>
+                                            <li class="editor-target ng-binding" data="EucrosiaUPC Italic"  style="font-family: EucrosiaUPC Italic;">EucrosiaUPC Italic</li>
+                                            <li class="editor-target ng-binding" data="EucrosiaUPC Bold"  style="font-family: EucrosiaUPC Bold;">EucrosiaUPC Bold</li>
+                                            <li class="editor-target ng-binding" data="EucrosiaUPC Bold Italic"  style="font-family: EucrosiaUPC Bold Italic;">EucrosiaUPC Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="FreesiaUPC"  style="font-family: FreesiaUPC;">FreesiaUPC</li>
+                                            <li class="editor-target ng-binding" data="FreesiaUPC Italic"  style="font-family: FreesiaUPC Italic;">FreesiaUPC Italic</li>
+                                            <li class="editor-target ng-binding" data="FreesiaUPC Bold"  style="font-family: FreesiaUPC Bold;">FreesiaUPC Bold</li>
+                                            <li class="editor-target ng-binding" data="FreesiaUPC Bold Italic"  style="font-family: FreesiaUPC Bold Italic;">FreesiaUPC Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="IrisUPC"  style="font-family: IrisUPC;">IrisUPC</li>
+                                            <li class="editor-target ng-binding" data="IrisUPC Italic"  style="font-family: IrisUPC Italic;">IrisUPC Italic</li>
+                                            <li class="editor-target ng-binding" data="IrisUPC Bold"  style="font-family: IrisUPC Bold;">IrisUPC Bold</li>
+                                            <li class="editor-target ng-binding" data="IrisUPC Bold Italic"  style="font-family: IrisUPC Bold Italic;">IrisUPC Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="JasmineUPC"  style="font-family: JasmineUPC;">JasmineUPC</li>
+                                            <li class="editor-target ng-binding" data="JasmineUPC Italic"  style="font-family: JasmineUPC Italic;">JasmineUPC Italic</li>
+                                            <li class="editor-target ng-binding" data="JasmineUPC Bold"  style="font-family: JasmineUPC Bold;">JasmineUPC Bold</li>
+                                            <li class="editor-target ng-binding" data="JasmineUPC Bold Italic"  style="font-family: JasmineUPC Bold Italic;">JasmineUPC Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="KodchiangUPC"  style="font-family: KodchiangUPC;">KodchiangUPC</li>
+                                            <li class="editor-target ng-binding" data="KodchiangUPC Italic"  style="font-family: KodchiangUPC Italic;">KodchiangUPC Italic</li>
+                                            <li class="editor-target ng-binding" data="KodchiangUPC Bold"  style="font-family: KodchiangUPC Bold;">KodchiangUPC Bold</li>
+                                            <li class="editor-target ng-binding" data="KodchiangUPC Bold Italic"  style="font-family: KodchiangUPC Bold Italic;">KodchiangUPC Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="LilyUPC"  style="font-family: LilyUPC;">LilyUPC</li>
+                                            <li class="editor-target ng-binding" data="LilyUPC Italic"  style="font-family: LilyUPC Italic;">LilyUPC Italic</li>
+                                            <li class="editor-target ng-binding" data="LilyUPC Bold"  style="font-family: LilyUPC Bold;">LilyUPC Bold</li>
+                                            <li class="editor-target ng-binding" data="LilyUPC Bold Italic"  style="font-family: LilyUPC Bold Italic;">LilyUPC Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="DFKai-SB"  style="font-family: DFKai-SB;">DFKai-SB</li>
+                                            <li class="editor-target ng-binding" data="Lucida Sans Unicode"  style="font-family: Lucida Sans Unicode;">Lucida Sans Unicode</li>
+                                            <li class="editor-target ng-binding" data="Arial Black"  style="font-family: Arial Black;">Arial Black</li>
+                                            <li class="editor-target ng-binding" data="Calibri"  style="font-family: Calibri;">Calibri</li>
+                                            <li class="editor-target ng-binding" data="Calibri Italic"  style="font-family: Calibri Italic;">Calibri Italic</li>
+                                            <li class="editor-target ng-binding" data="Calibri Bold"  style="font-family: Calibri Bold;">Calibri Bold</li>
+                                            <li class="editor-target ng-binding" data="Calibri Bold Italic"  style="font-family: Calibri Bold Italic;">Calibri Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="Cambria Italic"  style="font-family: Cambria Italic;">Cambria Italic</li>
+                                            <li class="editor-target ng-binding" data="Cambria Bold"  style="font-family: Cambria Bold;">Cambria Bold</li>
+                                            <li class="editor-target ng-binding" data="Cambria Bold Italic"  style="font-family: Cambria Bold Italic;">Cambria Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="Candara"  style="font-family: Candara;">Candara</li>
+                                            <li class="editor-target ng-binding" data="Candara Italic"  style="font-family: Candara Italic;">Candara Italic</li>
+                                            <li class="editor-target ng-binding" data="Candara Bold"  style="font-family: Candara Bold;">Candara Bold</li>
+                                            <li class="editor-target ng-binding" data="Candara Bold Italic"  style="font-family: Candara Bold Italic;">Candara Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="Comic Sans MS"  style="font-family: Comic Sans MS;">Comic Sans MS</li>
+                                            <li class="editor-target ng-binding" data="Comic Sans MS Bold"  style="font-family: Comic Sans MS Bold;">Comic Sans MS Bold</li>
+                                            <li class="editor-target ng-binding" data="Consolas"  style="font-family: Consolas;">Consolas</li>
+                                            <li class="editor-target ng-binding" data="Consolas Italic"  style="font-family: Consolas Italic;">Consolas Italic</li>
+                                            <li class="editor-target ng-binding" data="Consolas Bold"  style="font-family: Consolas Bold;">Consolas Bold</li>
+                                            <li class="editor-target ng-binding" data="Consolas Bold Italic"  style="font-family: Consolas Bold Italic;">Consolas Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="Constantia"  style="font-family: Constantia;">Constantia</li>
+                                            <li class="editor-target ng-binding" data="Constantia Italic"  style="font-family: Constantia Italic;">Constantia Italic</li>
+                                            <li class="editor-target ng-binding" data="Constantia Bold"  style="font-family: Constantia Bold;">Constantia Bold</li>
+                                            <li class="editor-target ng-binding" data="Constantia Bold Italic"  style="font-family: Constantia Bold Italic;">Constantia Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="Corbel"  style="font-family: Corbel;">Corbel</li>
+                                            <li class="editor-target ng-binding" data="Corbel Italic"  style="font-family: Corbel Italic;">Corbel Italic</li>
+                                            <li class="editor-target ng-binding" data="Corbel Bold"  style="font-family: Corbel Bold;">Corbel Bold</li>
+                                            <li class="editor-target ng-binding" data="Corbel Bold Italic"  style="font-family: Corbel Bold Italic;">Corbel Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="Georgia"  style="font-family: Georgia;">Georgia</li>
+                                            <li class="editor-target ng-binding" data="Georgia Italic"  style="font-family: Georgia Italic;">Georgia Italic</li>
+                                            <li class="editor-target ng-binding" data="Georgia Bold"  style="font-family: Georgia Bold;">Georgia Bold</li>
+                                            <li class="editor-target ng-binding" data="Georgia Bold Italic"  style="font-family: Georgia Bold Italic;">Georgia Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="Palatino Linotype"  style="font-family: Palatino Linotype;">Palatino Linotype</li>
+                                            <li class="editor-target ng-binding" data="Palatino Linotype Italic"  style="font-family: Palatino Linotype Italic;">Palatino Linotype Italic</li>
+                                            <li class="editor-target ng-binding" data="Palatino Linotype Bold"  style="font-family: Palatino Linotype Bold;">Palatino Linotype Bold</li>
+                                            <li class="editor-target ng-binding" data="Palatino Linotype Bold Italic"  style="font-family: Palatino Linotype Bold Italic;">Palatino Linotype Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="Segoe Print"  style="font-family: Segoe Print;">Segoe Print</li>
+                                            <li class="editor-target ng-binding" data="Segoe Print Bold"  style="font-family: Segoe Print Bold;">Segoe Print Bold</li>
+                                            <li class="editor-target ng-binding" data="Trebuchet MS"  style="font-family: Trebuchet MS;">Trebuchet MS</li>
+                                            <li class="editor-target ng-binding" data="Trebuchet MS Italic"  style="font-family: Trebuchet MS Italic;">Trebuchet MS Italic</li>
+                                            <li class="editor-target ng-binding" data="Trebuchet MS Bold"  style="font-family: Trebuchet MS Bold;">Trebuchet MS Bold</li>
+                                            <li class="editor-target ng-binding" data="Trebuchet MS Bold Italic"  style="font-family: Trebuchet MS Bold Italic;">Trebuchet MS Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="Verdana"  style="font-family: Verdana;">Verdana</li>
+                                            <li class="editor-target ng-binding" data="Verdana Italic"  style="font-family: Verdana Italic;">Verdana Italic</li>
+                                            <li class="editor-target ng-binding" data="Verdana Bold"  style="font-family: Verdana Bold;">Verdana Bold</li>
+                                            <li class="editor-target ng-binding" data="Verdana Bold Italic"  style="font-family: Verdana Bold Italic;">Verdana Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="Webdings"  style="font-family: Webdings;">Webdings</li>
+                                            <li class="editor-target ng-binding" data="Alpida Unicode System"  style="font-family: Alpida Unicode System;">Alpida Unicode System</li>
+                                            <li class="editor-target ng-binding" data="Franklin Gothic Medium"  style="font-family: Franklin Gothic Medium;">Franklin Gothic Medium</li>
+                                            <li class="editor-target ng-binding" data="Franklin Gothic Medium Italic"  style="font-family: Franklin Gothic Medium Italic;">Franklin Gothic Medium Italic</li>
+                                            <li class="editor-target ng-binding" data="方正北魏楷书繁体"  style="font-family: 方正北魏楷书繁体;">方正北魏楷书繁体</li>
+                                            <li class="editor-target ng-binding" data="方正北魏楷书简体"  style="font-family: 方正北魏楷书简体;">方正北魏楷书简体</li>
+                                            <li class="editor-target ng-binding" data="方正超粗黑简体"  style="font-family: 方正超粗黑简体;">方正超粗黑简体</li>
+                                            <li class="editor-target ng-binding" data="方正粗倩繁体"  style="font-family: 方正粗倩繁体;">方正粗倩繁体</li>
+                                            <li class="editor-target ng-binding" data="方正粗倩简体"  style="font-family: 方正粗倩简体;">方正粗倩简体</li>
+                                            <li class="editor-target ng-binding" data="方正粗宋繁体"  style="font-family: 方正粗宋繁体;">方正粗宋繁体</li>
+                                            <li class="editor-target ng-binding" data="方正粗宋简体"  style="font-family: 方正粗宋简体;">方正粗宋简体</li>
+                                            <li class="editor-target ng-binding" data="方正彩云繁体"  style="font-family: 方正彩云繁体;">方正彩云繁体</li>
+                                            <li class="editor-target ng-binding" data="方正彩云简体"  style="font-family: 方正彩云简体;">方正彩云简体</li>
+                                            <li class="editor-target ng-binding" data="方正大黑繁体"  style="font-family: 方正大黑繁体;">方正大黑繁体</li>
+                                            <li class="editor-target ng-binding" data="方正古隶繁体"  style="font-family: 方正古隶繁体;">方正古隶繁体</li>
+                                            <li class="editor-target ng-binding" data="方正古隶简体"  style="font-family: 方正古隶简体;">方正古隶简体</li>
+                                            <li class="editor-target ng-binding" data="方正黄草简体"  style="font-family: 方正黄草简体;">方正黄草简体</li>
+                                            <li class="editor-target ng-binding" data="方正华隶繁体"  style="font-family: 方正华隶繁体;">方正华隶繁体</li>
+                                            <li class="editor-target ng-binding" data="方正华隶简体"  style="font-family: 方正华隶简体;">方正华隶简体</li>
+                                            <li class="editor-target ng-binding" data="方正琥珀简体"  style="font-family: 方正琥珀简体;">方正琥珀简体</li>
+                                            <li class="editor-target ng-binding" data="方正剪纸繁体"  style="font-family: 方正剪纸繁体;">方正剪纸繁体</li>
+                                            <li class="editor-target ng-binding" data="方正剪纸简体"  style="font-family: 方正剪纸简体;">方正剪纸简体</li>
+                                            <li class="editor-target ng-binding" data="方正卡通繁体"  style="font-family: 方正卡通繁体;">方正卡通繁体</li>
+                                            <li class="editor-target ng-binding" data="方正卡通简体"  style="font-family: 方正卡通简体;">方正卡通简体</li>
+                                            <li class="editor-target ng-binding" data="方正隶二繁体"  style="font-family: 方正隶二繁体;">方正隶二繁体</li>
+                                            <li class="editor-target ng-binding" data="方正隶变繁体"  style="font-family: 方正隶变繁体;">方正隶变繁体</li>
+                                            <li class="editor-target ng-binding" data="方正隶变简体"  style="font-family: 方正隶变简体;">方正隶变简体</li>
+                                            <li class="editor-target ng-binding" data="方正隶书繁体"  style="font-family: 方正隶书繁体;">方正隶书繁体</li>
+                                            <li class="editor-target ng-binding" data="方正美黑简体"  style="font-family: 方正美黑简体;">方正美黑简体</li>
+                                            <li class="editor-target ng-binding" data="方正喵呜体"  style="font-family: 方正喵呜体;">方正喵呜体</li>
+                                            <li class="editor-target ng-binding" data="方正新舒体繁体"  style="font-family: 方正新舒体繁体;">方正新舒体繁体</li>
+                                            <li class="editor-target ng-binding" data="方正平和繁体"  style="font-family: 方正平和繁体;">方正平和繁体</li>
+                                            <li class="editor-target ng-binding" data="方正平和简体"  style="font-family: 方正平和简体;">方正平和简体</li>
+                                            <li class="editor-target ng-binding" data="方正胖头鱼简体"  style="font-family: 方正胖头鱼简体;">方正胖头鱼简体</li>
+                                            <li class="editor-target ng-binding" data="方正胖娃繁体"  style="font-family: 方正胖娃繁体;">方正胖娃繁体</li>
+                                            <li class="editor-target ng-binding" data="方正胖娃简体"  style="font-family: 方正胖娃简体;">方正胖娃简体</li>
+                                            <li class="editor-target ng-binding" data="方正启体繁体"  style="font-family: 方正启体繁体;">方正启体繁体</li>
+                                            <li class="editor-target ng-binding" data="方正启体简体"  style="font-family: 方正启体简体;">方正启体简体</li>
+                                            <li class="editor-target ng-binding" data="方正少儿繁体"  style="font-family: 方正少儿繁体;">方正少儿繁体</li>
+                                            <li class="editor-target ng-binding" data="方正少儿简体"  style="font-family: 方正少儿简体;">方正少儿简体</li>
+                                            <li class="editor-target ng-binding" data="方正宋黑繁体"  style="font-family: 方正宋黑繁体;">方正宋黑繁体</li>
+                                            <li class="editor-target ng-binding" data="方正水黑繁体"  style="font-family: 方正水黑繁体;">方正水黑繁体</li>
+                                            <li class="editor-target ng-binding" data="方正水黑简体"  style="font-family: 方正水黑简体;">方正水黑简体</li>
+                                            <li class="editor-target ng-binding" data="方正瘦金书繁体"  style="font-family: 方正瘦金书繁体;">方正瘦金书繁体</li>
+                                            <li class="editor-target ng-binding" data="方正瘦金书简体"  style="font-family: 方正瘦金书简体;">方正瘦金书简体</li>
+                                            <li class="editor-target ng-binding" data="方正舒体"  style="font-family: 方正舒体;">方正舒体</li>
+                                            <li class="editor-target ng-binding" data="方正苏新诗柳楷简体"  style="font-family: 方正苏新诗柳楷简体;">方正苏新诗柳楷简体</li>
+                                            <li class="editor-target ng-binding" data="方正宋一繁体"  style="font-family: 方正宋一繁体;">方正宋一繁体</li>
+                                            <li class="editor-target ng-binding" data="方正宋一简体"  style="font-family: 方正宋一简体;">方正宋一简体</li>
+                                            <li class="editor-target ng-binding" data="方正水柱繁体"  style="font-family: 方正水柱繁体;">方正水柱繁体</li>
+                                            <li class="editor-target ng-binding" data="方正水柱简体"  style="font-family: 方正水柱简体;">方正水柱简体</li>
+                                            <li class="editor-target ng-binding" data="方正特粗光辉繁体"  style="font-family: 方正特粗光辉繁体;">方正特粗光辉繁体</li>
+                                            <li class="editor-target ng-binding" data="方正特粗光辉简体"  style="font-family: 方正特粗光辉简体;">方正特粗光辉简体</li>
+                                            <li class="editor-target ng-binding" data="方正铁筋隶书繁体"  style="font-family: 方正铁筋隶书繁体;">方正铁筋隶书繁体</li>
+                                            <li class="editor-target ng-binding" data="方正铁筋隶书简体"  style="font-family: 方正铁筋隶书简体;">方正铁筋隶书简体</li>
+                                            <li class="editor-target ng-binding" data="方正祥隶繁体"  style="font-family: 方正祥隶繁体;">方正祥隶繁体</li>
+                                            <li class="editor-target ng-binding" data="方正祥隶简体"  style="font-family: 方正祥隶简体;">方正祥隶简体</li>
+                                            <li class="editor-target ng-binding" data="方正细倩繁体"  style="font-family: 方正细倩繁体;">方正细倩繁体</li>
+                                            <li class="editor-target ng-binding" data="方正细倩简体"  style="font-family: 方正细倩简体;">方正细倩简体</li>
+                                            <li class="editor-target ng-binding" data="方正细珊瑚繁体"  style="font-family: 方正细珊瑚繁体;">方正细珊瑚繁体</li>
+                                            <li class="editor-target ng-binding" data="方正细珊瑚简体"  style="font-family: 方正细珊瑚简体;">方正细珊瑚简体</li>
+                                            <li class="editor-target ng-binding" data="方正小篆体"  style="font-family: 方正小篆体;">方正小篆体</li>
+                                            <li class="editor-target ng-binding" data="方正硬笔楷书繁体"  style="font-family: 方正硬笔楷书繁体;">方正硬笔楷书繁体</li>
+                                            <li class="editor-target ng-binding" data="方正硬笔楷书简体"  style="font-family: 方正硬笔楷书简体;">方正硬笔楷书简体</li>
+                                            <li class="editor-target ng-binding" data="方正硬笔行书繁体"  style="font-family: 方正硬笔行书繁体;">方正硬笔行书繁体</li>
+                                            <li class="editor-target ng-binding" data="方正硬笔行书简体"  style="font-family: 方正硬笔行书简体;">方正硬笔行书简体</li>
+                                            <li class="editor-target ng-binding" data="方正艺黑繁体"  style="font-family: 方正艺黑繁体;">方正艺黑繁体</li>
+                                            <li class="editor-target ng-binding" data="方正艺黑简体"  style="font-family: 方正艺黑简体;">方正艺黑简体</li>
+                                            <li class="editor-target ng-binding" data="方正姚体繁体"  style="font-family: 方正姚体繁体;">方正姚体繁体</li>
+                                            <li class="editor-target ng-binding" data="方正姚体简体"  style="font-family: 方正姚体简体;">方正姚体简体</li>
+                                            <li class="editor-target ng-binding" data="方正姚体"  style="font-family: 方正姚体;">方正姚体</li>
+                                            <li class="editor-target ng-binding" data="方正幼线简体"  style="font-family: 方正幼线简体;">方正幼线简体</li>
+                                            <li class="editor-target ng-binding" data="方正毡笔黑繁体"  style="font-family: 方正毡笔黑繁体;">方正毡笔黑繁体</li>
+                                            <li class="editor-target ng-binding" data="方正毡笔黑简体"  style="font-family: 方正毡笔黑简体;">方正毡笔黑简体</li>
+                                            <li class="editor-target ng-binding" data="方正中等线繁体"  style="font-family: 方正中等线繁体;">方正中等线繁体</li>
+                                            <li class="editor-target ng-binding" data="方正稚艺繁体"  style="font-family: 方正稚艺繁体;">方正稚艺繁体</li>
+                                            <li class="editor-target ng-binding" data="方正稚艺简体"  style="font-family: 方正稚艺简体;">方正稚艺简体</li>
+                                            <li class="editor-target ng-binding" data="方正中倩繁体"  style="font-family: 方正中倩繁体;">方正中倩繁体</li>
+                                            <li class="editor-target ng-binding" data="方正中倩简体"  style="font-family: 方正中倩简体;">方正中倩简体</li>
+                                            <li class="editor-target ng-binding" data="Microsoft Sans Serif"  style="font-family: Microsoft Sans Serif;">Microsoft Sans Serif</li>
+                                            <li class="editor-target ng-binding" data="仿宋_GB2312"  style="font-family: 仿宋_GB2312;">仿宋_GB2312</li>
+                                            <li class="editor-target ng-binding" data="黑体"  style="font-family: 黑体;">黑体</li>
+                                            <li class="editor-target ng-binding" data="楷体_GB2312"  style="font-family: 楷体_GB2312;">楷体_GB2312</li>
+                                            <li class="editor-target ng-binding" data="华文楷体"  style="font-family: 华文楷体;">华文楷体</li>
+                                            <li class="editor-target ng-binding" data="华文行楷"  style="font-family: 华文行楷;">华文行楷</li>
+                                            <li class="editor-target ng-binding" data="Tahoma"  style="font-family: Tahoma;">Tahoma</li>
+                                            <li class="editor-target ng-binding" data="Tahoma Bold"  style="font-family: Tahoma Bold;">Tahoma Bold</li>
+                                            <li class="editor-target ng-binding" data="Futura Md BT Medium"  style="font-family: Futura Md BT Medium;">Futura Md BT Medium</li>
+                                            <li class="editor-target ng-binding" data="Futura Md BT Bold"  style="font-family: Futura Md BT Bold;">Futura Md BT Bold</li>
+                                            <li class="editor-target ng-binding" data="OCR-B 10 BT"  style="font-family: OCR-B 10 BT;">OCR-B 10 BT</li>
+                                            <li class="editor-target ng-binding" data="OCR-A BT"  style="font-family: OCR-A BT;">OCR-A BT</li>
+                                            <li class="editor-target ng-binding" data="方正正大黑简体"  style="font-family: 方正正大黑简体;">方正正大黑简体</li>
+                                            <li class="editor-target ng-binding" data="方正正黑简体"  style="font-family: 方正正黑简体;">方正正黑简体</li>
+                                            <li class="editor-target ng-binding" data="微软雅黑"  style="font-family: 微软雅黑;">微软雅黑</li>
+                                            <li class="editor-target ng-binding" data="Frobisher"  style="font-family: Frobisher;">Frobisher</li>
+                                            <li class="editor-target ng-binding" data="方正兰亭超细黑简体"  style="font-family: 方正兰亭超细黑简体;">方正兰亭超细黑简体</li>
+                                            <li class="editor-target ng-binding" data="Helvetica LT 47 Light Condensed"  style="font-family: Helvetica LT 47 Light Condensed;">Helvetica LT 47 Light Condensed</li>
+                                            <li class="editor-target ng-binding" data="Helvetica LT 55 Roman"  style="font-family: Helvetica LT 55 Roman;">Helvetica LT 55 Roman</li>
+                                            <li class="editor-target ng-binding" data="Helvetica LT 67 Medium Condensed"  style="font-family: Helvetica LT 67 Medium Condensed;">Helvetica LT 67 Medium Condensed</li>
+                                            <li class="editor-target ng-binding" data="Helvetica LT 75 Bold"  style="font-family: Helvetica LT 75 Bold;">Helvetica LT 75 Bold</li>
+                                            <li class="editor-target ng-binding" data="Helvetica LT 77 Bold Condensed"  style="font-family: Helvetica LT 77 Bold Condensed;">Helvetica LT 77 Bold Condensed</li>
+                                            <li class="editor-target ng-binding" data="Helvetica Neue"  style="font-family: Helvetica Neue;">Helvetica Neue</li>
+                                            <li class="editor-target ng-binding" data="VW Headline OT-Black"  style="font-family: VW Headline OT-Black;">VW Headline OT-Black</li>
+                                            <li class="editor-target ng-binding" data="方正大黑_GBK"  style="font-family: 方正大黑_GBK;">方正大黑_GBK</li>
+                                            <li class="editor-target ng-binding" data="方正黑体_GBK"  style="font-family: 方正黑体_GBK;">方正黑体_GBK</li>
+                                            <li class="editor-target ng-binding" data="方正兰亭粗黑简体"  style="font-family: 方正兰亭粗黑简体;">方正兰亭粗黑简体</li>
+                                            <li class="editor-target ng-binding" data="方正兰亭黑简体"  style="font-family: 方正兰亭黑简体;">方正兰亭黑简体</li>
+                                            <li class="editor-target ng-binding" data="方正兰亭特黑扁简体"  style="font-family: 方正兰亭特黑扁简体;">方正兰亭特黑扁简体</li>
+                                            <li class="editor-target ng-binding" data="方正兰亭特黑简体"  style="font-family: 方正兰亭特黑简体;">方正兰亭特黑简体</li>
+                                            <li class="editor-target ng-binding" data="方正兰亭特黑长简体"  style="font-family: 方正兰亭特黑长简体;">方正兰亭特黑长简体</li>
+                                            <li class="editor-target ng-binding" data="方正兰亭细黑_GBK"  style="font-family: 方正兰亭细黑_GBK;">方正兰亭细黑_GBK</li>
+                                            <li class="editor-target ng-binding" data="方正兰亭纤黑简体"  style="font-family: 方正兰亭纤黑简体;">方正兰亭纤黑简体</li>
+                                            <li class="editor-target ng-binding" data="方正兰亭中粗黑_GBK"  style="font-family: 方正兰亭中粗黑_GBK;">方正兰亭中粗黑_GBK</li>
+                                            <li class="editor-target ng-binding" data="方正兰亭中黑_GBK"  style="font-family: 方正兰亭中黑_GBK;">方正兰亭中黑_GBK</li>
+                                            <li class="editor-target ng-binding" data="汉仪细等线繁"  style="font-family: 汉仪细等线繁;">汉仪细等线繁</li>
+                                            <li class="editor-target ng-binding" data="汉仪细等线简"  style="font-family: 汉仪细等线简;">汉仪细等线简</li>
+                                            <li class="editor-target ng-binding" data="汉仪中等线繁"  style="font-family: 汉仪中等线繁;">汉仪中等线繁</li>
+                                            <li class="editor-target ng-binding" data="汉仪中等线简"  style="font-family: 汉仪中等线简;">汉仪中等线简</li>
+                                            <li class="editor-target ng-binding" data="汉仪中黑简"  style="font-family: 汉仪中黑简;">汉仪中黑简</li>
+                                            <li class="editor-target ng-binding" data="Arial"  style="font-family: Arial;">Arial</li>
+                                            <li class="editor-target ng-binding" data="Arial Italic"  style="font-family: Arial Italic;">Arial Italic</li>
+                                            <li class="editor-target ng-binding" data="Arial Bold"  style="font-family: Arial Bold;">Arial Bold</li>
+                                            <li class="editor-target ng-binding" data="Arial Bold Italic"  style="font-family: Arial Bold Italic;">Arial Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="Courier New"  style="font-family: Courier New;">Courier New</li>
+                                            <li class="editor-target ng-binding" data="Courier New Italic"  style="font-family: Courier New Italic;">Courier New Italic</li>
+                                            <li class="editor-target ng-binding" data="Courier New Bold"  style="font-family: Courier New Bold;">Courier New Bold</li>
+                                            <li class="editor-target ng-binding" data="Courier New Bold Italic"  style="font-family: Courier New Bold Italic;">Courier New Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="DaunPenh"  style="font-family: DaunPenh;">DaunPenh</li>
+                                            <li class="editor-target ng-binding" data="DokChampa"  style="font-family: DokChampa;">DokChampa</li>
+                                            <li class="editor-target ng-binding" data="Estrangelo Edessa"  style="font-family: Estrangelo Edessa;">Estrangelo Edessa</li>
+                                            <li class="editor-target ng-binding" data="Euphemia"  style="font-family: Euphemia;">Euphemia</li>
+                                            <li class="editor-target ng-binding" data="Gautami"  style="font-family: Gautami;">Gautami</li>
+                                            <li class="editor-target ng-binding" data="Impact"  style="font-family: Impact;">Impact</li>
+                                            <li class="editor-target ng-binding" data="Iskoola Pota"  style="font-family: Iskoola Pota;">Iskoola Pota</li>
+                                            <li class="editor-target ng-binding" data="Kalinga"  style="font-family: Kalinga;">Kalinga</li>
+                                            <li class="editor-target ng-binding" data="Kartika"  style="font-family: Kartika;">Kartika</li>
+                                            <li class="editor-target ng-binding" data="Latha"  style="font-family: Latha;">Latha</li>
+                                            <li class="editor-target ng-binding" data="Lucida Console"  style="font-family: Lucida Console;">Lucida Console</li>
+                                            <li class="editor-target ng-binding" data="Malgun Gothic"  style="font-family: Malgun Gothic;">Malgun Gothic</li>
+                                            <li class="editor-target ng-binding" data="Malgun Gothic Bold"  style="font-family: Malgun Gothic Bold;">Malgun Gothic Bold</li>
+                                            <li class="editor-target ng-binding" data="Mangal"  style="font-family: Mangal;">Mangal</li>
+                                            <li class="editor-target ng-binding" data="Microsoft Himalaya"  style="font-family: Microsoft Himalaya;">Microsoft Himalaya</li>
+                                            <li class="editor-target ng-binding" data="Microsoft JhengHei"  style="font-family: Microsoft JhengHei;">Microsoft JhengHei</li>
+                                            <li class="editor-target ng-binding" data="Microsoft JhengHei Bold"  style="font-family: Microsoft JhengHei Bold;">Microsoft JhengHei Bold</li>
+                                            <li class="editor-target ng-binding" data="Microsoft YaHei"  style="font-family: Microsoft YaHei;">Microsoft YaHei</li>
+                                            <li class="editor-target ng-binding" data="Microsoft YaHei Bold"  style="font-family: Microsoft YaHei Bold;">Microsoft YaHei Bold</li>
+                                            <li class="editor-target ng-binding" data="Mongolian Baiti"  style="font-family: Mongolian Baiti;">Mongolian Baiti</li>
+                                            <li class="editor-target ng-binding" data="MV Boli"  style="font-family: MV Boli;">MV Boli</li>
+                                            <li class="editor-target ng-binding" data="Nyala"  style="font-family: Nyala;">Nyala</li>
+                                            <li class="editor-target ng-binding" data="Plantagenet Cherokee"  style="font-family: Plantagenet Cherokee;">Plantagenet Cherokee</li>
+                                            <li class="editor-target ng-binding" data="Raavi"  style="font-family: Raavi;">Raavi</li>
+                                            <li class="editor-target ng-binding" data="Segoe Script"  style="font-family: Segoe Script;">Segoe Script</li>
+                                            <li class="editor-target ng-binding" data="Segoe Script Bold"  style="font-family: Segoe Script Bold;">Segoe Script Bold</li>
+                                            <li class="editor-target ng-binding" data="Segoe UI"  style="font-family: Segoe UI;">Segoe UI</li>
+                                            <li class="editor-target ng-binding" data="Segoe UI Bold"  style="font-family: Segoe UI Bold;">Segoe UI Bold</li>
+                                            <li class="editor-target ng-binding" data="Segoe UI Italic"  style="font-family: Segoe UI Italic;">Segoe UI Italic</li>
+                                            <li class="editor-target ng-binding" data="Segoe UI Bold Italic"  style="font-family: Segoe UI Bold Italic;">Segoe UI Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="Shruti"  style="font-family: Shruti;">Shruti</li>
+                                            <li class="editor-target ng-binding" data="SimSun-ExtB"  style="font-family: SimSun-ExtB;">SimSun-ExtB</li>
+                                            <li class="editor-target ng-binding" data="Sylfaen"  style="font-family: Sylfaen;">Sylfaen</li>
+                                            <li class="editor-target ng-binding" data="Times New Roman"  style="font-family: Times New Roman;">Times New Roman</li>
+                                            <li class="editor-target ng-binding" data="Times New Roman Italic"  style="font-family: Times New Roman Italic;">Times New Roman Italic</li>
+                                            <li class="editor-target ng-binding" data="Times New Roman Bold"  style="font-family: Times New Roman Bold;">Times New Roman Bold</li>
+                                            <li class="editor-target ng-binding" data="Times New Roman Bold Italic"  style="font-family: Times New Roman Bold Italic;">Times New Roman Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="Tunga"  style="font-family: Tunga;">Tunga</li>
+                                            <li class="editor-target ng-binding" data="Vrinda"  style="font-family: Vrinda;">Vrinda</li>
+                                            <li class="editor-target ng-binding" data="Microsoft Yi Baiti"  style="font-family: Microsoft Yi Baiti;">Microsoft Yi Baiti</li>
+                                            <li class="editor-target ng-binding" data="Tahoma"  style="font-family: Tahoma;">Tahoma</li>
+                                            <li class="editor-target ng-binding" data="Tahoma Bold"  style="font-family: Tahoma Bold;">Tahoma Bold</li>
+                                            <li class="editor-target ng-binding" data="Microsoft Sans Serif"  style="font-family: Microsoft Sans Serif;">Microsoft Sans Serif</li>
+                                            <li class="editor-target ng-binding" data="Angsana New"  style="font-family: Angsana New;">Angsana New</li>
+                                            <li class="editor-target ng-binding" data="Angsana New Italic"  style="font-family: Angsana New Italic;">Angsana New Italic</li>
+                                            <li class="editor-target ng-binding" data="Angsana New Bold"  style="font-family: Angsana New Bold;">Angsana New Bold</li>
+                                            <li class="editor-target ng-binding" data="Angsana New Bold Italic"  style="font-family: Angsana New Bold Italic;">Angsana New Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="Cordia New"  style="font-family: Cordia New;">Cordia New</li>
+                                            <li class="editor-target ng-binding" data="Cordia New Italic"  style="font-family: Cordia New Italic;">Cordia New Italic</li>
+                                            <li class="editor-target ng-binding" data="Cordia New Bold"  style="font-family: Cordia New Bold;">Cordia New Bold</li>
+                                            <li class="editor-target ng-binding" data="Cordia New Bold Italic"  style="font-family: Cordia New Bold Italic;">Cordia New Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="Gisha"  style="font-family: Gisha;">Gisha</li>
+                                            <li class="editor-target ng-binding" data="Gisha Bold"  style="font-family: Gisha Bold;">Gisha Bold</li>
+                                            <li class="editor-target ng-binding" data="Leelawadee"  style="font-family: Leelawadee;">Leelawadee</li>
+                                            <li class="editor-target ng-binding" data="Leelawadee Bold"  style="font-family: Leelawadee Bold;">Leelawadee Bold</li>
+                                            <li class="editor-target ng-binding" data="Microsoft Uighur"  style="font-family: Microsoft Uighur;">Microsoft Uighur</li>
+                                            <li class="editor-target ng-binding" data="MoolBoran"  style="font-family: MoolBoran;">MoolBoran</li>
+                                            <li class="editor-target ng-binding" data="Symbol"  style="font-family: Symbol;">Symbol</li>
+                                            <li class="editor-target ng-binding" data="Wingdings"  style="font-family: Wingdings;">Wingdings</li>
+                                            <li class="editor-target ng-binding" data="Andalus"  style="font-family: Andalus;">Andalus</li>
+                                            <li class="editor-target ng-binding" data="Arabic Typesetting"  style="font-family: Arabic Typesetting;">Arabic Typesetting</li>
+                                            <li class="editor-target ng-binding" data="Simplified Arabic"  style="font-family: Simplified Arabic;">Simplified Arabic</li>
+                                            <li class="editor-target ng-binding" data="Simplified Arabic Bold"  style="font-family: Simplified Arabic Bold;">Simplified Arabic Bold</li>
+                                            <li class="editor-target ng-binding" data="Simplified Arabic Fixed"  style="font-family: Simplified Arabic Fixed;">Simplified Arabic Fixed</li>
+                                            <li class="editor-target ng-binding" data="Traditional Arabic"  style="font-family: Traditional Arabic;">Traditional Arabic</li>
+                                            <li class="editor-target ng-binding" data="Traditional Arabic Bold"  style="font-family: Traditional Arabic Bold;">Traditional Arabic Bold</li>
+                                            <li class="editor-target ng-binding" data="Aharoni Bold"  style="font-family: Aharoni Bold;">Aharoni Bold</li>
+                                            <li class="editor-target ng-binding" data="David"  style="font-family: David;">David</li>
+                                            <li class="editor-target ng-binding" data="David Bold"  style="font-family: David Bold;">David Bold</li>
+                                            <li class="editor-target ng-binding" data="FrankRuehl"  style="font-family: FrankRuehl;">FrankRuehl</li>
+                                            <li class="editor-target ng-binding" data="Levenim MT"  style="font-family: Levenim MT;">Levenim MT</li>
+                                            <li class="editor-target ng-binding" data="Levenim MT Bold"  style="font-family: Levenim MT Bold;">Levenim MT Bold</li>
+                                            <li class="editor-target ng-binding" data="Miriam"  style="font-family: Miriam;">Miriam</li>
+                                            <li class="editor-target ng-binding" data="Miriam Fixed"  style="font-family: Miriam Fixed;">Miriam Fixed</li>
+                                            <li class="editor-target ng-binding" data="Narkisim"  style="font-family: Narkisim;">Narkisim</li>
+                                            <li class="editor-target ng-binding" data="Rod"  style="font-family: Rod;">Rod</li>
+                                            <li class="editor-target ng-binding" data="FangSong"  style="font-family: FangSong;">FangSong</li>
+                                            <li class="editor-target ng-binding" data="SimHei"  style="font-family: SimHei;">SimHei</li>
+                                            <li class="editor-target ng-binding" data="KaiTi"  style="font-family: KaiTi;">KaiTi</li>
+                                            <li class="editor-target ng-binding" data="AngsanaUPC"  style="font-family: AngsanaUPC;">AngsanaUPC</li>
+                                            <li class="editor-target ng-binding" data="AngsanaUPC Italic"  style="font-family: AngsanaUPC Italic;">AngsanaUPC Italic</li>
+                                            <li class="editor-target ng-binding" data="AngsanaUPC Bold"  style="font-family: AngsanaUPC Bold;">AngsanaUPC Bold</li>
+                                            <li class="editor-target ng-binding" data="AngsanaUPC Bold Italic"  style="font-family: AngsanaUPC Bold Italic;">AngsanaUPC Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="Browallia New"  style="font-family: Browallia New;">Browallia New</li>
+                                            <li class="editor-target ng-binding" data="Browallia New Italic"  style="font-family: Browallia New Italic;">Browallia New Italic</li>
+                                            <li class="editor-target ng-binding" data="Browallia New Bold"  style="font-family: Browallia New Bold;">Browallia New Bold</li>
+                                            <li class="editor-target ng-binding" data="Browallia New Bold Italic"  style="font-family: Browallia New Bold Italic;">Browallia New Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="BrowalliaUPC"  style="font-family: BrowalliaUPC;">BrowalliaUPC</li>
+                                            <li class="editor-target ng-binding" data="BrowalliaUPC Italic"  style="font-family: BrowalliaUPC Italic;">BrowalliaUPC Italic</li>
+                                            <li class="editor-target ng-binding" data="BrowalliaUPC Bold"  style="font-family: BrowalliaUPC Bold;">BrowalliaUPC Bold</li>
+                                            <li class="editor-target ng-binding" data="BrowalliaUPC Bold Italic"  style="font-family: BrowalliaUPC Bold Italic;">BrowalliaUPC Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="CordiaUPC"  style="font-family: CordiaUPC;">CordiaUPC</li>
+                                            <li class="editor-target ng-binding" data="CordiaUPC Bold"  style="font-family: CordiaUPC Bold;">CordiaUPC Bold</li>
+                                            <li class="editor-target ng-binding" data="CordiaUPC Bold Italic"  style="font-family: CordiaUPC Bold Italic;">CordiaUPC Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="CordiaUPC Italic"  style="font-family: CordiaUPC Italic;">CordiaUPC Italic</li>
+                                            <li class="editor-target ng-binding" data="DilleniaUPC"  style="font-family: DilleniaUPC;">DilleniaUPC</li>
+                                            <li class="editor-target ng-binding" data="DilleniaUPC Italic"  style="font-family: DilleniaUPC Italic;">DilleniaUPC Italic</li>
+                                            <li class="editor-target ng-binding" data="DilleniaUPC Bold"  style="font-family: DilleniaUPC Bold;">DilleniaUPC Bold</li>
+                                            <li class="editor-target ng-binding" data="DilleniaUPC Bold Italic"  style="font-family: DilleniaUPC Bold Italic;">DilleniaUPC Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="EucrosiaUPC"  style="font-family: EucrosiaUPC;">EucrosiaUPC</li>
+                                            <li class="editor-target ng-binding" data="EucrosiaUPC Italic"  style="font-family: EucrosiaUPC Italic;">EucrosiaUPC Italic</li>
+                                            <li class="editor-target ng-binding" data="EucrosiaUPC Bold"  style="font-family: EucrosiaUPC Bold;">EucrosiaUPC Bold</li>
+                                            <li class="editor-target ng-binding" data="EucrosiaUPC Bold Italic"  style="font-family: EucrosiaUPC Bold Italic;">EucrosiaUPC Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="FreesiaUPC"  style="font-family: FreesiaUPC;">FreesiaUPC</li>
+                                            <li class="editor-target ng-binding" data="FreesiaUPC Italic"  style="font-family: FreesiaUPC Italic;">FreesiaUPC Italic</li>
+                                            <li class="editor-target ng-binding" data="FreesiaUPC Bold"  style="font-family: FreesiaUPC Bold;">FreesiaUPC Bold</li>
+                                            <li class="editor-target ng-binding" data="FreesiaUPC Bold Italic"  style="font-family: FreesiaUPC Bold Italic;">FreesiaUPC Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="IrisUPC"  style="font-family: IrisUPC;">IrisUPC</li>
+                                            <li class="editor-target ng-binding" data="IrisUPC Italic"  style="font-family: IrisUPC Italic;">IrisUPC Italic</li>
+                                            <li class="editor-target ng-binding" data="IrisUPC Bold"  style="font-family: IrisUPC Bold;">IrisUPC Bold</li>
+                                            <li class="editor-target ng-binding" data="IrisUPC Bold Italic"  style="font-family: IrisUPC Bold Italic;">IrisUPC Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="JasmineUPC"  style="font-family: JasmineUPC;">JasmineUPC</li>
+                                            <li class="editor-target ng-binding" data="JasmineUPC Italic"  style="font-family: JasmineUPC Italic;">JasmineUPC Italic</li>
+                                            <li class="editor-target ng-binding" data="JasmineUPC Bold"  style="font-family: JasmineUPC Bold;">JasmineUPC Bold</li>
+                                            <li class="editor-target ng-binding" data="JasmineUPC Bold Italic"  style="font-family: JasmineUPC Bold Italic;">JasmineUPC Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="KodchiangUPC"  style="font-family: KodchiangUPC;">KodchiangUPC</li>
+                                            <li class="editor-target ng-binding" data="KodchiangUPC Italic"  style="font-family: KodchiangUPC Italic;">KodchiangUPC Italic</li>
+                                            <li class="editor-target ng-binding" data="KodchiangUPC Bold"  style="font-family: KodchiangUPC Bold;">KodchiangUPC Bold</li>
+                                            <li class="editor-target ng-binding" data="KodchiangUPC Bold Italic"  style="font-family: KodchiangUPC Bold Italic;">KodchiangUPC Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="LilyUPC"  style="font-family: LilyUPC;">LilyUPC</li>
+                                            <li class="editor-target ng-binding" data="LilyUPC Italic"  style="font-family: LilyUPC Italic;">LilyUPC Italic</li>
+                                            <li class="editor-target ng-binding" data="LilyUPC Bold"  style="font-family: LilyUPC Bold;">LilyUPC Bold</li>
+                                            <li class="editor-target ng-binding" data="LilyUPC Bold Italic"  style="font-family: LilyUPC Bold Italic;">LilyUPC Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="DFKai-SB"  style="font-family: DFKai-SB;">DFKai-SB</li>
+                                            <li class="editor-target ng-binding" data="Lucida Sans Unicode"  style="font-family: Lucida Sans Unicode;">Lucida Sans Unicode</li>
+                                            <li class="editor-target ng-binding" data="Arial Black"  style="font-family: Arial Black;">Arial Black</li>
+                                            <li class="editor-target ng-binding" data="Calibri"  style="font-family: Calibri;">Calibri</li>
+                                            <li class="editor-target ng-binding" data="Calibri Italic"  style="font-family: Calibri Italic;">Calibri Italic</li>
+                                            <li class="editor-target ng-binding" data="Calibri Bold"  style="font-family: Calibri Bold;">Calibri Bold</li>
+                                            <li class="editor-target ng-binding" data="Calibri Bold Italic"  style="font-family: Calibri Bold Italic;">Calibri Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="Cambria Italic"  style="font-family: Cambria Italic;">Cambria Italic</li>
+                                            <li class="editor-target ng-binding" data="Cambria Bold"  style="font-family: Cambria Bold;">Cambria Bold</li>
+                                            <li class="editor-target ng-binding" data="Cambria Bold Italic"  style="font-family: Cambria Bold Italic;">Cambria Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="Candara"  style="font-family: Candara;">Candara</li>
+                                            <li class="editor-target ng-binding" data="Candara Italic"  style="font-family: Candara Italic;">Candara Italic</li>
+                                            <li class="editor-target ng-binding" data="Candara Bold"  style="font-family: Candara Bold;">Candara Bold</li>
+                                            <li class="editor-target ng-binding" data="Candara Bold Italic"  style="font-family: Candara Bold Italic;">Candara Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="Comic Sans MS"  style="font-family: Comic Sans MS;">Comic Sans MS</li>
+                                            <li class="editor-target ng-binding" data="Comic Sans MS Bold"  style="font-family: Comic Sans MS Bold;">Comic Sans MS Bold</li>
+                                            <li class="editor-target ng-binding" data="Consolas"  style="font-family: Consolas;">Consolas</li>
+                                            <li class="editor-target ng-binding" data="Consolas Italic"  style="font-family: Consolas Italic;">Consolas Italic</li>
+                                            <li class="editor-target ng-binding" data="Consolas Bold"  style="font-family: Consolas Bold;">Consolas Bold</li>
+                                            <li class="editor-target ng-binding" data="Consolas Bold Italic"  style="font-family: Consolas Bold Italic;">Consolas Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="Constantia"  style="font-family: Constantia;">Constantia</li>
+                                            <li class="editor-target ng-binding" data="Constantia Italic"  style="font-family: Constantia Italic;">Constantia Italic</li>
+                                            <li class="editor-target ng-binding" data="Constantia Bold"  style="font-family: Constantia Bold;">Constantia Bold</li>
+                                            <li class="editor-target ng-binding" data="Constantia Bold Italic"  style="font-family: Constantia Bold Italic;">Constantia Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="Corbel"  style="font-family: Corbel;">Corbel</li>
+                                            <li class="editor-target ng-binding" data="Corbel Italic"  style="font-family: Corbel Italic;">Corbel Italic</li>
+                                            <li class="editor-target ng-binding" data="Corbel Bold"  style="font-family: Corbel Bold;">Corbel Bold</li>
+                                            <li class="editor-target ng-binding" data="Corbel Bold Italic"  style="font-family: Corbel Bold Italic;">Corbel Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="Franklin Gothic Medium"  style="font-family: Franklin Gothic Medium;">Franklin Gothic Medium</li>
+                                            <li class="editor-target ng-binding" data="Franklin Gothic Medium Italic"  style="font-family: Franklin Gothic Medium Italic;">Franklin Gothic Medium Italic</li>
+                                            <li class="editor-target ng-binding" data="Georgia"  style="font-family: Georgia;">Georgia</li>
+                                            <li class="editor-target ng-binding" data="Georgia Italic"  style="font-family: Georgia Italic;">Georgia Italic</li>
+                                            <li class="editor-target ng-binding" data="Georgia Bold"  style="font-family: Georgia Bold;">Georgia Bold</li>
+                                            <li class="editor-target ng-binding" data="Georgia Bold Italic"  style="font-family: Georgia Bold Italic;">Georgia Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="Palatino Linotype"  style="font-family: Palatino Linotype;">Palatino Linotype</li>
+                                            <li class="editor-target ng-binding" data="Palatino Linotype Italic"  style="font-family: Palatino Linotype Italic;">Palatino Linotype Italic</li>
+                                            <li class="editor-target ng-binding" data="Palatino Linotype Bold"  style="font-family: Palatino Linotype Bold;">Palatino Linotype Bold</li>
+                                            <li class="editor-target ng-binding" data="Palatino Linotype Bold Italic"  style="font-family: Palatino Linotype Bold Italic;">Palatino Linotype Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="Segoe Print"  style="font-family: Segoe Print;">Segoe Print</li>
+                                            <li class="editor-target ng-binding" data="Segoe Print Bold"  style="font-family: Segoe Print Bold;">Segoe Print Bold</li>
+                                            <li class="editor-target ng-binding" data="Trebuchet MS"  style="font-family: Trebuchet MS;">Trebuchet MS</li>
+                                            <li class="editor-target ng-binding" data="Trebuchet MS Italic"  style="font-family: Trebuchet MS Italic;">Trebuchet MS Italic</li>
+                                            <li class="editor-target ng-binding" data="Trebuchet MS Bold"  style="font-family: Trebuchet MS Bold;">Trebuchet MS Bold</li>
+                                            <li class="editor-target ng-binding" data="Trebuchet MS Bold Italic"  style="font-family: Trebuchet MS Bold Italic;">Trebuchet MS Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="Verdana"  style="font-family: Verdana;">Verdana</li>
+                                            <li class="editor-target ng-binding" data="Verdana Italic"  style="font-family: Verdana Italic;">Verdana Italic</li>
+                                            <li class="editor-target ng-binding" data="Verdana Bold"  style="font-family: Verdana Bold;">Verdana Bold</li>
+                                            <li class="editor-target ng-binding" data="Verdana Bold Italic"  style="font-family: Verdana Bold Italic;">Verdana Bold Italic</li>
+                                            <li class="editor-target ng-binding" data="Webdings"  style="font-family: Webdings;">Webdings</li>
+                                            <li class="editor-target ng-binding" data="方正风雅宋简体"  style="font-family: 方正风雅宋简体;">方正风雅宋简体</li>
+                                            <li class="editor-target ng-binding" data="方正华隶简体"  style="font-family: 方正华隶简体;">方正华隶简体</li>
+                                            <li class="editor-target ng-binding" data="方正黑体简体"  style="font-family: 方正黑体简体;">方正黑体简体</li>
+                                            <li class="editor-target ng-binding" data="方正楷体简体"  style="font-family: 方正楷体简体;">方正楷体简体</li>
+                                            <li class="editor-target ng-binding" data="方正卡通简体"  style="font-family: 方正卡通简体;">方正卡通简体</li>
+                                            <li class="editor-target ng-binding" data="方正隶变简体"  style="font-family: 方正隶变简体;">方正隶变简体</li>
+                                            <li class="editor-target ng-binding" data="方正隶二简体"  style="font-family: 方正隶二简体;">方正隶二简体</li>
+                                            <li class="editor-target ng-binding" data="方正隶书简体"  style="font-family: 方正隶书简体;">方正隶书简体</li>
+                                            <li class="editor-target ng-binding" data="方正兰亭黑简体"  style="font-family: 方正兰亭黑简体;">方正兰亭黑简体</li>
+                                            <li class="editor-target ng-binding" data="方正美黑简体"  style="font-family: 方正美黑简体;">方正美黑简体</li>
+                                            <li class="editor-target ng-binding" data="方正粗倩_GBK"  style="font-family: 方正粗倩_GBK;">方正粗倩_GBK</li>
+                                            <li class="editor-target ng-binding" data="方正启体简体"  style="font-family: 方正启体简体;">方正启体简体</li>
+                                            <li class="editor-target ng-binding" data="方正少儿简体"  style="font-family: 方正少儿简体;">方正少儿简体</li>
+                                            <li class="editor-target ng-binding" data="方正水黑简体"  style="font-family: 方正水黑简体;">方正水黑简体</li>
+                                            <li class="editor-target ng-binding" data="方正宋三简体"  style="font-family: 方正宋三简体;">方正宋三简体</li>
+                                            <li class="editor-target ng-binding" data="方正书宋简体"  style="font-family: 方正书宋简体;">方正书宋简体</li>
+                                            <li class="editor-target ng-binding" data="方正魏碑简体"  style="font-family: 方正魏碑简体;">方正魏碑简体</li>
+                                            <li class="editor-target ng-binding" data="方正行楷简体"  style="font-family: 方正行楷简体;">方正行楷简体</li>
+                                            <li class="editor-target ng-binding" data="方正祥隶简体"  style="font-family: 方正祥隶简体;">方正祥隶简体</li>
+                                            <li class="editor-target ng-binding" data="方正新舒体简体"  style="font-family: 方正新舒体简体;">方正新舒体简体</li>
+                                            <li class="editor-target ng-binding" data="方正艺黑简体"  style="font-family: 方正艺黑简体;">方正艺黑简体</li>
+                                            <li class="editor-target ng-binding" data="方正综艺简体"  style="font-family: 方正综艺简体;">方正综艺简体</li>
+                                            <li class="editor-target ng-binding" data="汉仪娃娃篆简"  style="font-family: 汉仪娃娃篆简;">汉仪娃娃篆简</li>
+                                            <li class="editor-target ng-binding" data="汉仪太极体简"  style="font-family: 汉仪太极体简;">汉仪太极体简</li>
+                                            <li class="editor-target ng-binding" data="汉仪秀英体简"  style="font-family: 汉仪秀英体简;">汉仪秀英体简</li>
+                                            <li class="editor-target ng-binding" data="迷你简卡通"  style="font-family: 迷你简卡通;">迷你简卡通</li>
+                                            <li class="editor-target ng-binding" data="微软雅黑"  style="font-family: 微软雅黑;">微软雅黑</li>
+                                            <li class="editor-target ng-binding" data="微软雅黑 Bold"  style="font-family: 微软雅黑 Bold;">微软雅黑 Bold</li>
+                                            <li class="editor-target ng-binding" data="仿宋_GB2312"  style="font-family: 仿宋_GB2312;">仿宋_GB2312</li>
+                                            <li class="editor-target ng-binding" data="黑体"  style="font-family: 黑体;">黑体</li>
+                                            <li class="editor-target ng-binding" data="楷体_GB2312"  style="font-family: 楷体_GB2312;">楷体_GB2312</li>
+                                            <li class="editor-target ng-binding" data="方正黑体_GBK"  style="font-family: 方正黑体_GBK;">方正黑体_GBK</li>
+                                            <li class="editor-target ng-binding" data="方正正大黑简体"  style="font-family: 方正正大黑简体;">方正正大黑简体</li>
+                                            <li class="editor-target ng-binding" data="方正正黑简体"  style="font-family: 方正正黑简体;">方正正黑简体</li>
+                                            <li class="editor-target ng-binding" data="汉真广标"  style="font-family: 汉真广标;">汉真广标</li>
+                                            <li class="editor-target ng-binding" data="ￎﾢ￈￭ﾼ￲￐￐﾿ﾬ"  style="font-family: ￎﾢ￈￭ﾼ￲￐￐﾿ﾬ;">ￎﾢ￈￭ﾼ￲￐￐﾿ﾬ</li>
+                                            <li class="editor-target ng-binding" data="ￎﾢ￈￭ﾼ￲￁ﾥￊ￩"  style="font-family: ￎﾢ￈￭ﾼ￲￁ﾥￊ￩;">ￎﾢ￈￭ﾼ￲￁ﾥￊ￩</li>
+                                            <li class="editor-target ng-binding" data="方正北魏楷书简体"  style="font-family: 方正北魏楷书简体;">方正北魏楷书简体</li>
+                                            <li class="editor-target ng-binding" data="方正粗活意简体"  style="font-family: 方正粗活意简体;">方正粗活意简体</li>
+                                            <li class="editor-target ng-binding" data="方正粗宋简体"  style="font-family: 方正粗宋简体;">方正粗宋简体</li>
+                                            <li class="editor-target ng-binding" data="方正毡笔黑简体"  style="font-family: 方正毡笔黑简体;">方正毡笔黑简体</li>
+                                            <li class="editor-target ng-binding" data="方正大黑简体"  style="font-family: 方正大黑简体;">方正大黑简体</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="attr-text">大小</span>
+                    <div class="editor-drop-down attr-text" style="width: 144px;">
+                        <input value="18px" id="textsize" style="width: 108px;" onclick="ShowFontSizeList()">
+                        <div class="mask" onclick="ShowFontSizeList()" style="width: 142px;">
+                            <span class="icon more eqf-clickmore"></span>
+                        </div>
+                        <div class="editor-drop-down-list" id="sizelist" style="right: 0px; top: 38px;">
+                            <div class="arrow">
+                            </div>
+                            <div class="list">
+                                <div class="scroll" style="height: 300px;">
+                                    <ul style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
+                                            <li class="editor-target ng-binding" data="6">6px</li>
+                                            <li class="editor-target ng-binding" data="7">7px</li>
+                                            <li class="editor-target ng-binding" data="8">8px</li>
+                                            <li class="editor-target ng-binding" data="9">9px</li>
+                                            <li class="editor-target ng-binding" data="10">10px</li>
+                                            <li class="editor-target ng-binding" data="11">11px</li>
+                                            <li class="editor-target ng-binding" data="12">12px</li>
+                                            <li class="editor-target ng-binding" data="13">13px</li>
+                                            <li class="editor-target ng-binding" data="14">14px</li>
+                                            <li class="editor-target ng-binding" data="15">15px</li>
+                                            <li class="editor-target ng-binding" data="16">16px</li>
+                                            <li class="editor-target ng-binding" data="17">17px</li>
+                                            <li class="editor-target ng-binding" data="18">18px</li>
+                                            <li class="editor-target ng-binding" data="19">19px</li>
+                                            <li class="editor-target ng-binding" data="20">20px</li>
+                                            <li class="editor-target ng-binding" data="21">21px</li>
+                                            <li class="editor-target ng-binding" data="22">22px</li>
+                                            <li class="editor-target ng-binding" data="23">23px</li>
+                                            <li class="editor-target ng-binding" data="24">24px</li>
+                                            <li class="editor-target ng-binding" data="25">25px</li>
+                                            <li class="editor-target ng-binding" data="26">26px</li>
+                                            <li class="editor-target ng-binding" data="27">27px</li>
+                                            <li class="editor-target ng-binding" data="28">28px</li>
+                                            <li class="editor-target ng-binding" data="29">29px</li>
+                                            <li class="editor-target ng-binding" data="30">30px</li>
+                                            <li class="editor-target ng-binding" data="31">31px</li>
+                                            <li class="editor-target ng-binding" data="32">32px</li>
+                                            <li class="editor-target ng-binding" data="33">33px</li>
+                                            <li class="editor-target ng-binding" data="34">34px</li>
+                                            <li class="editor-target ng-binding" data="35">35px</li>
+                                            <li class="editor-target ng-binding" data="36">36px</li>
+                                            <li class="editor-target ng-binding" data="37">37px</li>
+                                            <li class="editor-target ng-binding" data="38">38px</li>
+                                            <li class="editor-target ng-binding" data="39">39px</li>
+                                            <li class="editor-target ng-binding" data="40">40px</li>
+                                            <li class="editor-target ng-binding" data="41">41px</li>
+                                            <li class="editor-target ng-binding" data="42">42px</li>
+                                            <li class="editor-target ng-binding" data="43">43px</li>
+                                            <li class="editor-target ng-binding" data="44">44px</li>
+                                            <li class="editor-target ng-binding" data="45">45px</li>
+                                            <li class="editor-target ng-binding" data="46">46px</li>
+                                            <li class="editor-target ng-binding" data="47">47px</li>
+                                            <li class="editor-target ng-binding" data="48">48px</li>
+                                            <li class="editor-target ng-binding" data="49">49px</li>
+                                            <li class="editor-target ng-binding" data="50">50px</li>
+                                            <li class="editor-target ng-binding" data="51">51px</li>
+                                            <li class="editor-target ng-binding" data="52">52px</li>
+                                            <li class="editor-target ng-binding" data="53">53px</li>
+                                            <li class="editor-target ng-binding" data="54">54px</li>
+                                            <li class="editor-target ng-binding" data="55">55px</li>
+                                            <li class="editor-target ng-binding" data="56">56px</li>
+                                            <li class="editor-target ng-binding" data="57">57px</li>
+                                            <li class="editor-target ng-binding" data="58">58px</li>
+                                            <li class="editor-target ng-binding" data="59">59px</li>
+                                            <li class="editor-target ng-binding" data="60">60px</li>
+                                            <li class="editor-target ng-binding" data="61">61px</li>
+                                            <li class="editor-target ng-binding" data="62">62px</li>
+                                            <li class="editor-target ng-binding" data="63">63px</li>
+                                            <li class="editor-target ng-binding" data="64">64px</li>
+                                            <li class="editor-target ng-binding" data="65">65px</li>
+                                            <li class="editor-target ng-binding" data="66">66px</li>
+                                            <li class="editor-target ng-binding" data="67">67px</li>
+                                            <li class="editor-target ng-binding" data="68">68px</li>
+                                            <li class="editor-target ng-binding" data="69">69px</li>
+                                            <li class="editor-target ng-binding" data="70">70px</li>
+                                            <li class="editor-target ng-binding" data="71">71px</li>
+                                            <li class="editor-target ng-binding" data="72">72px</li>
+                                            <li class="editor-target ng-binding" data="73">73px</li>
+                                            <li class="editor-target ng-binding" data="74">74px</li>
+                                            <li class="editor-target ng-binding" data="75">75px</li>
+                                            <li class="editor-target ng-binding" data="76">76px</li>
+                                            <li class="editor-target ng-binding" data="77">77px</li>
+                                            <li class="editor-target ng-binding" data="78">78px</li>
+                                            <li class="editor-target ng-binding" data="79">79px</li>
+                                            <li class="editor-target ng-binding" data="80">80px</li>
+                                            <li class="editor-target ng-binding" data="81">81px</li>
+                                            <li class="editor-target ng-binding" data="82">82px</li>
+                                            <li class="editor-target ng-binding" data="83">83px</li>
+                                            <li class="editor-target ng-binding" data="84">84px</li>
+                                            <li class="editor-target ng-binding" data="85">85px</li>
+                                            <li class="editor-target ng-binding" data="86">86px</li>
+                                            <li class="editor-target ng-binding" data="87">87px</li>
+                                            <li class="editor-target ng-binding" data="88">88px</li>
+                                            <li class="editor-target ng-binding" data="89">89px</li>
+                                            <li class="editor-target ng-binding" data="90">90px</li>
+                                            <li class="editor-target ng-binding" data="91">91px</li>
+                                            <li class="editor-target ng-binding" data="92">92px</li>
+                                            <li class="editor-target ng-binding" data="93">93px</li>
+                                            <li class="editor-target ng-binding" data="94">94px</li>
+                                            <li class="editor-target ng-binding" data="95">95px</li>
+                                            <li class="editor-target ng-binding" data="96">96px</li>
+                                            <li class="editor-target ng-binding" data="97">97px</li>
+                                            <li class="editor-target ng-binding" data="98">98px</li>
+                                            <li class="editor-target ng-binding" data="99">99px</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="attr-image">尺寸</span>
+                    <span class="slider attr-image" id='item-slider'></span>
+                    <span class="attr-image">宽度</span>
+                    <input class="editor-input-number attr-image" id="item-w">
+                    <span class="attr-image">高度</span>
+                    <input class="editor-input-number attr-image" id="item-h">
+                    <span class="attr-text attr-image">左边距</span>
+                    <input class="editor-input-number attr-text attr-image" id="item-x">
+                    <span class="attr-text attr-image">上边距</span>
+                    <input class="editor-input-number attr-text attr-image" id="item-y">
+                </div>
+            </div>
+        </div>
+        <div class="editor-save">
+            <ul>
+                <li>
+                    <div onclick="SaveTemplate(0,'update')">保存</div>
+                </li>
+                <li>
+                    <div onclick="SaveTemplate(0,'add')">另存</div>
+                </li>
+                <li>
+                    <div onclick="SaveTemplate(1,'add')">下单</div>
+                </li>
+                <li>
+                    <div onclick="history.go(-1)">退出</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+<div id="morecolor" style="display: none; width: 262px; height: 210px; padding: 0px; z-index: 9000;" onmouseout="ShowCurrentColor()">
+    <div id="color" style="cursor: default; width: 260px; height: 160px; margin: 10px auto; position: relative; border: 1px solid #c7f5fc;"></div>
+    <div id="Div1" style="cursor: default; width: 260px; overflow: hidden; margin: 5px auto; overflow: hidden;">
+        <div id="showcolor" style="width: 50px; height: 50px; float: left; background-color: rgb(139, 0, 22);"></div>
+        <div style="height: 50px; float: left; margin-left: 5px;">
+            <input type="hidden" id="rgbValue" value="#123456">
+            <div style="margin-top: 10px;">
+                C:<input type="text" maxlength="3" style="width: 22px;" id="cvalue">% M:<input type="text" maxlength="3" style="width: 22px;" id="mvalue" />% Y:<input type="text" maxlength="3" style="width: 22px;" id="yvalue" />% K:<input type="text" maxlength="3" style="width: 22px;" id="kvalue">%
+            </div>
+        </div>
+    </div>
+</div>
+<div id="eqi_mask" class="editor-mask"></div>
+<div class="editor-notify" style="top: -50px; left: 50%; margin-left: -120px; width: 240px; line-height: 50px; position: fixed; color: rgb(255, 255, 255); font-size: 16px; text-align: center; z-index: 9999; cursor: default; transition: transform 0.3s; transform: translate3d(0px, 50px, 0px); background: rgb(68, 203, 131);"></div>
+
+<input type="hidden" id="hideTypeId" value="38" />
+<input type="hidden" id="hideTemplateNumber" value="10369" />
+<input type="hidden" id="hidePreTemplateId" value="0" />
+<input type="hidden" id="hideNextTemplateId" value="10370" />
+<input type="hidden" id="hideTemplateName" value="测试" />
+<input type="hidden" id="hideSizeId" value="35" />
+<input type="hidden" id="hidePercent" value="0.4601449" />
+<input type="hidden" id="hidePreviewId" value="26" />
+<input type="hidden" id="hideMarginLeft" value="5.434783" />
+<input type="hidden" id="hideMarginRight" value="5.434783" />
+<input type="hidden" id="hideMarginTop" value="5.434783" />
+<input type="hidden" id="hideMarginBottom" value="5.434783" />
+<input type="hidden" id="hideDocumentNumber" value="0" />
+<input type="hidden" id="hideMode" value="tpl" />
+    
+    <script src="../../../libs.baidu.com/jqueryui/1.9.2/jquery-ui.min.js" tppabs="http://libs.baidu.com/jqueryui/1.9.2/jquery-ui.min.js"></script>
+    <script src="../../Scripts/jquery.json.js" tppabs="http://test.v5print.com/Scripts/jquery.json.js"></script>
+    <script src="../../Scripts/jquery.query.js" tppabs="http://test.v5print.com/Scripts/jquery.query.js"></script>
+    <script src="../../Scripts/layer1.8.3/layer.min.js" tppabs="http://test.v5print.com/Scripts/layer1.8.3/layer.min.js"></script>
+    <script src="../../Scripts/editor1.js-v=20160908" tppabs="http://test.v5print.com/Scripts/editor1.js?v=20160908"></script>
+    <script src="../../Scripts/artDialog/artDialog.js-skin=common" tppabs="http://test.v5print.com/Scripts/artDialog/artDialog.js?skin=common"></script>
+    <script src="../../Scripts/artDialog/plugins/iframeTools.js" tppabs="http://test.v5print.com/Scripts/artDialog/plugins/iframeTools.js"></script>
+    <script src="../../Scripts/jquery.mCustomScrollbar/jquery.mousewheel.min.js" tppabs="http://test.v5print.com/Scripts/jquery.mCustomScrollbar/jquery.mousewheel.min.js"></script>
+    <script src="../../Scripts/jquery.mCustomScrollbar/jquery.mCustomScrollbar.js" tppabs="http://test.v5print.com/Scripts/jquery.mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+    <script src="../../Scripts/pupload/plupload.full.min.js" tppabs="http://test.v5print.com/Scripts/pupload/plupload.full.min.js"></script>
+    <script src="../../Scripts/pupload/i18n/zh_CN.js" tppabs="http://test.v5print.com/Scripts/pupload/i18n/zh_CN.js"></script>
+
+</body>
+</html>

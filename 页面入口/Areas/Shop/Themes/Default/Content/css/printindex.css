@@ -1,0 +1,18 @@
+.serviceWarp li { /*width: 307px;*/ /*height: 460px;*/ /*float: left;*/ width: 285px; height: 370px; float: left; border: 1px solid #E6E6E6; margin: 0 15px 21px 0; }
+.serviceWarp li.four { margin-right: -15px; }
+.serviceWarp li div.img { /**width: 268px;*/ width: 285px; height: 191px; float: left; position: relative; cursor: pointer; }
+.serviceWarp li div.img i { width: 287px; height: 191px; background: #fff; filter: alpha(opacity=20); -moz-opacity: 0.2; -khtml-opacity: 0.2; opacity: 0.2; display: none; position: absolute; z-index: 3; top: 0; left: 0; }
+.serviceWarp li div.img .imgAbs { position: absolute; width: 287px; height: 191px; top: -1px; left: -1px; z-index: 1; }
+.serviceWarp li dl { width: 265px; /*border-right: 1px solid #e6e6e6;*/ padding: 40px 10px 80px 10px; }
+.serviceWarp li.four dl { border-right: none; margin: 0; }
+.serviceWarp li dl dt a { font-size: 14px; color: #000; line-height: 16px; }
+.serviceWarp li dl dd { color: #B3B3B3; line-height: 24px; }
+.dgl-contenticon { position: absolute; left: 91px; bottom: 0px; z-index: 2; }
+.dgl-spaceDouLine { width: 100%; height: 5px; overflow: hidden; border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; }
+.d-textcenter { text-align: center; }
+.fl { float: left; }
+.dgl-button { color: #00A3E0; border: 2px solid #00A3E0; padding: 7px 30px; position: relative; top: -80px; left: 88px; z-index: 2; }
+.dgl-button:hover { color: #ffffff; background-color: #00A3E0; text-decoration: none; border: 1px solid #ffffff; }
+.dcf-contentdes { margin-top: 10px; }
+.dgl-contentdes { margin-top: 5px; text-align: center; }
+.dgl-contentdes a, .dcf-contentdes a { color: #000; font-weight: bold; font-size: 16px; }

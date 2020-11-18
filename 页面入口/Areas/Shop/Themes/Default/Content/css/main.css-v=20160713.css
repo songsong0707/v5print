@@ -1,0 +1,187 @@
+/************************************
+*@描述:变量
+************************************/
+/*布局宽度*/
+/*默认颜色值*/
+/*
+*MIX混合
+*/
+/************************************
+*@描述:功能类样式(function);function.less以此为准
+************************************/
+/*图片垂直居中*/
+/**居中**/
+/**隐藏文字**/
+/**圆角**/
+/**投影**/
+/**透明度**/
+/**背景颜色渐变**/
+/**对象渐隐渐显**/
+/**旋转**/
+/**三角箭头**/
+/**纯文字**/
+.ind-g-banner { height: 420px; position: relative; zoom: 1; z-index: 1; clear: both; }
+.ind-g-banner .list { width: 100%; height: 420px; overflow: hidden; position: relative; zoom: 1; }
+.ind-g-banner .list li { width: 100%; height: 420px; text-align: center; }
+.ind-g-banner .num { position: absolute; zoom: 1; height: 12px; left: 0px; bottom: 22px; right: 0px; text-align: center; }
+.ind-g-banner .num span { display: inline-block; *display: inline; *zoom: 1; width: 12px; height: 12px; background-color: #cacaca; overflow: hidden; margin-right: 7px; cursor: pointer; border-radius: 50%; }
+.ind-g-banner .num span.on { background-color: #ed193a; }
+.ind-g-banner .prev,
+.ind-g-banner .next { display: block; width: 46px; height: 87px; position: absolute; zoom: 1; left: 50%; margin-left: -595px; top: 50%; margin-top: -46px; background: url("../images/arrowbg.png"/*tpa=http://test.v5print.com/Areas/Shop/Themes/Default/Content/images/arrowbg.png*/) -46px 0 no-repeat transparent; display: none; }
+.ind-g-banner .prev:hover { background-position: -46px -87px; }
+.ind-g-banner .next:hover { background-position: 0 -87px; }
+.ind-g-banner .next { margin-left: 549px; background-position: 0 0; }
+.ind-g-banner:hover .prev,
+.ind-g-banner:hover .next { display: block; }
+.ind-g-banner .a { width: 1190px; height: 100%; display: inline-block; *display: inline; *zoom: 1; margin: 0 auto; }
+.ind-g-main .box1,
+.ind-g-main .box2 { margin-top: 45px; }
+.ind-g-main .box1 .title .more,
+.ind-g-main .box2 .title .more { float: right; display: inline; font-size: 14px; color: #666; margin-top: 12px; }
+.ind-g-main .box1 .title h4,
+.ind-g-main .box2 .title h4 { font-size: 25px; color: #202020; font-weight: normal; float: left; display: inline; }
+.ind-g-main .box1 .title .tip,
+.ind-g-main .box2 .title .tip { font-size: 12px; color: #999; float: left; display: inline; margin-top: 14px; margin-left: 18px; }
+.ind-g-main .box1 .cardList,
+.ind-g-main .box2 .cardList { margin-top: 20px; }
+.ind-g-main .box1 .cardList li,
+.ind-g-main .box2 .cardList li { margin-right: 22px; margin-bottom: 22px; float: left; display: inline; width: 380px;height:295px; border: 1px solid #e5e5e5; }
+.ind-g-main .box1 .cardList li:hover,
+.ind-g-main .box2 .cardList li:hover { margin-top: -5px; -webkit-box-shadow: 10px 10px 10px -6px #ccc; -moz-box-shadow: 10px 10px 10px -6px #ccc; box-shadow: 10px 10px 10px -6px #ccc; }
+.ind-g-main .box1 .cardList li.li3,
+.ind-g-main .box2 .cardList li.li3 { margin-right: 0; }
+.ind-g-main .box1 .cardList li .imgw,
+.ind-g-main .box2 .cardList li .imgw { width: 380px; height: 255px; position: relative; zoom: 1; }
+.ind-g-main .box1 .cardList li .imgw img,
+.ind-g-main .box2 .cardList li .imgw img { width: 380px;height: 255px; }
+.ind-g-main .box1 .cardList li .imgw .ico,
+.ind-g-main .box2 .cardList li .imgw .ico { width: 106px; height: 56px; background: url("../images/zhizhang.png"/*tpa=http://test.v5print.com/Areas/Shop/Themes/Default/Content/images/zhizhang.png*/) 0 0 no-repeat transparent; position: absolute; zoom: 1; z-index: 2; left: 50%; margin-left: -53px; bottom: -2px; }
+.ind-g-main .box1 .cardList li .text1,
+.ind-g-main .box2 .cardList li .text1 { font-size: 16px; text-align: center; color: #000; line-height: 40px; float: left; margin-left: 10px; }
+.ind-g-main .box1 .cardList li .text2,
+.ind-g-main .box2 .cardList li .text2 { font-size: 14px; text-align: center; color: #B3B3B3; line-height: 26px; margin-top: 15px; }
+.ind-g-main .box1 .cardList li .text3,
+.ind-g-main .box2 .cardList li .text3 { text-align: center; float: right; margin-right: 10px; line-height: 40px; }
+.ind-g-main .box1 .cardList li .s1,
+.ind-g-main .box2 .cardList li .s1 { font-size: 16px; color: #da0004; }
+.ind-g-main .box1 .cardList li .s1 i,
+.ind-g-main .box2 .cardList li .s1 i { font-size: 12px; color: #da0004; }
+.ind-g-main .box1 .cardList li .s2,
+.ind-g-main .box2 .cardList li .s2 { font-size: 12px; color: #8b8b8b; }
+.ind-g-main .box1 .cardList li .btnw,
+.ind-g-main .box2 .cardList li .btnw { text-align: center; margin-top: 18px; }
+.ind-g-main .box1 .cardList li .btnw .btn,
+.ind-g-main .box2 .cardList li .btnw .btn { display: inline-block; *display: inline; *zoom: 1; width: 149px; height: 39px; border: 2px solid #00a3e0; line-height: 38px; color: #00a3e0; font-size: 14px; }
+.ind-g-main .box1 .cardList li .btnw .btn:hover,
+.ind-g-main .box2 .cardList li .btnw .btn:hover { background-color: #00a3e0; color: #fff; text-decoration: none; }
+.ind-g-main .box1 .cardList li .text4,
+.ind-g-main .box2 .cardList li .text4 { width: 326px; margin-left: auto; margin-right: auto; border-top: 1px solid #e5e5e5; text-align: center; line-height: 50px; margin-top: 30px; color: #777; }
+.ind-g-main .box1 .cardList li .text4 .split,
+.ind-g-main .box2 .cardList li .text4 .split { padding: 0px 25px; }
+.ind-g-main2 { margin-top: 45px; }
+.ind-g-main2 .title .more { float: right; display: inline; font-size: 14px; color: #666; margin-top: 12px; }
+.ind-g-main2 .title h4 { font-size: 25px; color: #202020; font-weight: normal; float: left; display: inline; }
+.ind-g-main2 .title .tip { font-size: 12px; color: #999; float: left; display: inline; margin-top: 14px; margin-left: 18px; }
+.ind-g-main2 .mainBox { background-color: #f4f4f4; margin-top: 15px; }
+.ind-g-main2 .cardList { width: 100%; overflow: hidden; padding-top: 45px; }
+.ind-g-main2 .cardList .list { width: 120%; }
+.ind-g-main2 .cardList li { width: 278px; float: left; display: inline; padding-bottom: 45px; margin-right: 27px; }
+.ind-g-main2 .cardList li .top { width: 272px; height: 342px; background: url("../images/listbg.png"/*tpa=http://test.v5print.com/Areas/Shop/Themes/Default/Content/images/listbg.png*/) 0 0 no-repeat transparent; padding: 2px 4px 4px 2px; overflow: hidden; position: relative; zoom: 1; margin-top: 8px; }
+.ind-g-main2 .cardList li .top .img { position: absolute; zoom: 1; top: 2px; left: 2px; }
+.ind-g-main2 .cardList li .idno { text-align: center; font-family: arial; color: #666; line-height: 36px; }
+.ind-g-main2 .cardList li .bot { margin-top: 0px; }
+.ind-g-main2 .cardList li .favWrap { height: 28px; text-align: right; padding-right: 10px; }
+.ind-g-main2 .cardList li .favWrap .addfav,
+.ind-g-main2 .cardList li .favWrap .faved { display: inline-block; *display: inline; *zoom: 1; width: 28px; height: 28px; background: url("../images/favopt.png"/*tpa=http://test.v5print.com/Areas/Shop/Themes/Default/Content/images/favopt.png*/) 0 0 no-repeat transparent; }
+.ind-g-main2 .cardList li .favWrap .addfav:hover,
+.ind-g-main2 .cardList li .favWrap .faved { background-position: right 0; }
+.ind-g-main2 .cardList li .sel { height: 23px; font-size: 0; text-align: center; }
+.ind-g-main2 .cardList li .sel .a1,
+.ind-g-main2 .cardList li .sel .a2,
+.ind-g-main2 .cardList li .sel .a3,
+.ind-g-main2 .cardList li .sel .a4 { width: 23px; height: 23px; background: url("../images/selbg.png"/*tpa=http://test.v5print.com/Areas/Shop/Themes/Default/Content/images/selbg.png*/) 0 0 no-repeat transparent; display: inline-block; *display: inline; *zoom: 1; margin-left: 5px; margin-right: 5px; background-position: -34px 0; }
+.ind-g-main2 .cardList li .sel .a1.active,
+.ind-g-main2 .cardList li .sel .a2.active,
+.ind-g-main2 .cardList li .sel .a3.active,
+.ind-g-main2 .cardList li .sel .a4.active { background-position: 0 0; }
+.ind-g-main2 .cardList li .btn { display: block; width: 95px; height: 29px; margin-left: auto; margin-right: auto; background-color: #3c3c3c; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; margin-top: 19px; line-height: 27px; font-size: 12px; color: #fff; text-align: center; -webkit-transition: background-color 0.3s ease-in; -moz-transition: background-color 0.3s ease-in; -ms-transition: background-color 0.3s ease-in; -o-transition: background-color 0.3s ease-in; transition: background-color 0.3s ease-in; }
+.ind-g-main2 .cardList li .btn:hover { text-decoration: none; background-color: #d6000f; }
+.ind-g-main3 { height: 140px; background: url("../images/mainbg3.jpg"/*tpa=http://test.v5print.com/Areas/Shop/Themes/Default/Content/images/mainbg3.jpg*/) 0 0 repeat-x transparent; padding-top: 38px; }
+.ind-g-main3 .text { text-align: center; font-size: 20px; color: #fff; line-height: 1.5; }
+.ind-g-main3 .btn { width: 238px; height: 66px; background: url("../images/moredesign.png"/*tpa=http://test.v5print.com/Areas/Shop/Themes/Default/Content/images/moredesign.png*/) 0 0 no-repeat transparent; font-size: 26px; font-weight: bold; color: #fff; text-align: center; line-height: 54px; display: block; margin-left: auto; margin-right: auto; margin-top: 18px; }
+.ind-g-main3 .btn:hover { text-decoration: none; }
+.ind-g-main4 { margin-top: 45px; /*padding-bottom: 45px;*/ /*border-bottom: 1px solid #e6e6e6;*/ }
+.ind-g-main4 .title .more { float: right; display: inline; font-size: 14px; color: #666; margin-top: 12px; }
+.ind-g-main4 .title h4 { font-size: 25px; color: #202020; font-weight: normal; float: left; display: inline; }
+.ind-g-main4 .title .tip { font-size: 12px; color: #999; float: left; display: inline; margin-top: 14px; margin-left: 18px; }
+.ind-g-main4 .mxyp { margin-top: 10px; }
+.ind-g-main4 .mxyp .box1,
+.ind-g-main4 .mxyp .box4 { width: 351px; height: 516px; background-color: #f5f5f5; float: left; display: inline; text-align: center; overflow: hidden; }
+.ind-g-main4 .mxyp .boxM { width: 462px; height: 516px; float: left; display: inline; margin-left: 13px; margin-right: 13px; }
+.ind-g-main4 .mxyp .boxM .box2,
+.ind-g-main4 .mxyp .boxM .box3 { width: 462px; height: 252px; background-color: #f5f5f5; float: left; display: inline; text-align: center; overflow: hidden; }
+.ind-g-main4 .mxyp .boxM .box3 { margin-top: 12px; }
+.ind-g-main5 { margin-top: 3px; border-top: 1px solid #e6e6e6; padding-top: 33px; }
+.ind-g-main5 .box1 { width: 588px; float: left; display: inline; }
+.ind-g-main5 .box1 .title { font-size: 18px; color: #323232; height: 18px; border-left: 3px solid #ed193a; padding-left: 8px; line-height: 18px; }
+.ind-g-main5 .box1 .hpbox { margin-top: 13px; }
+.ind-g-main5 .box1 .boxLeft { width: 347px; height: 423px; background-color: #f3f3f3; float: left; display: inline; padding: 0px 15px; }
+.ind-g-main5 .box1 .boxRight { width: 209px; height: 323px; border: 1px solid #e5e5e5; float: left; display: inline; padding-top: 98px; }
+.ind-g-main5 .box1 .boxRight .hp { width: 142px; height: 100px; background: url("../images/hpbg.png"/*tpa=http://test.v5print.com/Areas/Shop/Themes/Default/Content/images/hpbg.png*/) 0 0 no-repeat transparent; margin-left: auto; margin-right: auto; padding-top: 42px; }
+.ind-g-main5 .box1 .boxRight .hp .text1 { font-size: 42px; color: #ff523e; text-align: center; }
+.ind-g-main5 .box1 .boxRight .hp .text1 span { font-size: 18px; }
+.ind-g-main5 .box1 .boxRight .hp .text2 { font-size: 14px; color: #666; text-align: center; }
+.ind-g-main5 .box1 .boxRight .text { margin-top: 45px; text-align: center; font-size: 14px; color: #888; }
+.ind-g-main5 .box1 .boxRight .text span { color: #ff523e; }
+.ind-g-main5 .box1 .hpList { padding-top: 22px; padding-bottom: 23px; height: 378px; overflow: hidden; }
+.ind-g-main5 .box1 .hpList li { padding-bottom: 25px; padding-top: 25px; border-bottom: 1px solid #d7d7d7; }
+.ind-g-main5 .box1 .hpList li .top .imgw { width: 40px; height: 40px; float: left; display: inline; margin-right: 10px; }
+.ind-g-main5 .box1 .hpList li .top .imgw img { width: 40px; height: 40px; }
+.ind-g-main5 .box1 .hpList li .top .name { font-size: 12px; color: #f15a5b; padding-top: 6px; }
+.ind-g-main5 .box1 .hpList li .top .area { font-size: 12px; color: #aeaeae; }
+.ind-g-main5 .box1 .hpList li .mid { font-size: 12px; color: #666; line-height: 20px; margin-top: 10px; }
+.ind-g-main5 .box1 .hpList li .foot { margin-top: 12px; }
+.ind-g-main5 .box1 .hpList li .foot .star img { margin-right: 5px; }
+.ind-g-main5 .box1 .hpList li .foot .text { color: #b0b0b0; margin-top: 7px; }
+.ind-g-main5 .box1 .hpList li.li1 { padding-top: 0px; }
+.ind-g-main5 .box1 .hpList li.li2 { border-bottom: 0; }
+.ind-g-main5 .box2 { width: 588px; float: right; display: inline; }
+.ind-g-main5 .box2 .title { font-size: 18px; color: #323232; height: 18px; border-left: 3px solid #ed193a; padding-left: 8px; }
+.ind-g-main5 .box2 .xdbox { margin-top: 13px; }
+.ind-g-main5 .box2 .boxLeft { width: 228px; height: 423px; background-color: #f3f3f3; float: left; display: inline; padding-left: 13px; padding-right: 13px; }
+.ind-g-main5 .box2 .boxLeft .top { padding-bottom: 13px; }
+.ind-g-main5 .box2 .boxLeft .top .txt { height: 40px; line-height: 38px; font-size: 14px; color: #323232; }
+.ind-g-main5 .box2 .boxLeft .top .num span,
+.ind-g-main5 .box2 .boxLeft .top .num i { display: inline-block; *display: inline; *zoom: 1; vertical-align: top; width: 31px; height: 31px; background-color: #e1e1e1; margin-right: 5px; font-size: 18px; color: #ff523e; line-height: 30px; text-align: center; font-weight: bold; }
+.ind-g-main5 .box2 .boxLeft .top .num i { width: 7px; background-color: transparent; }
+.ind-g-main5 .box2 .boxLeft .xdList { position: relative; zoom: 1; width: 228px; height: 325px; overflow: hidden; }
+.ind-g-main5 .box2 .boxLeft .xdList .list { border-top: 1px dashed #d7d7d7; }
+.ind-g-main5 .box2 .boxLeft .xdList li { height: 35px; border-bottom: 1px dashed #d7d7d7; line-height: 34px; color: #666; }
+.ind-g-main5 .box2 .boxLeft .xdList li .r { text-align: right; float: right; display: inline; }
+.ind-g-main5 .box2 .boxLeft .xdList li i { color: #9a9a9a; }
+.ind-g-main5 .box2 .boxRight { width: 332px; height: 421px; border: 1px solid #e5e5e5; float: left; display: inline; background: url("../images/xdstep.png"/*tpa=http://test.v5print.com/Areas/Shop/Themes/Default/Content/images/xdstep.png*/) 39px 0 no-repeat transparent; }
+.ind-g-main5 .box2 .boxRight .step1,
+.ind-g-main5 .box2 .boxRight .step2,
+.ind-g-main5 .box2 .boxRight .step3 { padding-left: 150px; }
+.ind-g-main5 .box2 .boxRight .step1 .txt1,
+.ind-g-main5 .box2 .boxRight .step2 .txt1,
+.ind-g-main5 .box2 .boxRight .step3 .txt1 { width: 126px; height: 34px; line-height: 32px; padding-left: 22px; font-size: 14px; color: #fff; background: url("../images/xdstepbg.png"/*tpa=http://test.v5print.com/Areas/Shop/Themes/Default/Content/images/xdstepbg.png*/) 0 0 no-repeat transparent; }
+.ind-g-main5 .box2 .boxRight .step1 .txt2,
+.ind-g-main5 .box2 .boxRight .step2 .txt2,
+.ind-g-main5 .box2 .boxRight .step3 .txt2 { margin-top: 5px; width: 126px; padding-left: 22px; }
+.ind-g-main5 .box2 .boxRight .step1 .txt2 a,
+.ind-g-main5 .box2 .boxRight .step2 .txt2 a,
+.ind-g-main5 .box2 .boxRight .step3 .txt2 a { color: #999999; font-size: 14px; }
+.ind-g-main5 .box2 .boxRight .step1 .txt2 a:hover,
+.ind-g-main5 .box2 .boxRight .step2 .txt2 a:hover,
+.ind-g-main5 .box2 .boxRight .step3 .txt2 a:hover { color: #00a3e0; }
+.ind-g-main5 .box2 .boxRight .step1 { margin-top: 66px; }
+.ind-g-main5 .box2 .boxRight .step2 { margin-top: 75px; }
+.ind-g-main5 .box2 .boxRight .step3 { margin-top: 66px; }
+.g-link .wrap { width: 1190px; margin: 0 auto; }
+.g-link .box { border-top: 2px solid #e6e6e6; padding: 25px 0; }
+.g-link .box2 { border-top: 1px solid #e6e6e6; }
+.g-link .btitle { width: 110px; float: left; text-align: right; color: #999999; line-height: 26px; }
+.g-link ul { overflow: hidden; padding-left: 65px; }
+.g-link ul li { width: 145px; height: 26px; line-height: 26px; overflow: hidden; text-overflow: ellipsis; word-wrap: normal; white-space: nowrap; float: left; }
+.g-link ul li a { color: #999; }

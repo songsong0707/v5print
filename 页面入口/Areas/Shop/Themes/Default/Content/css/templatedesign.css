@@ -1,0 +1,200 @@
+.wrap { padding: 10px;width:1190px;margin:10px auto;clear:both; }
+.goods { padding-bottom: 10px; }
+.small { text-align: center; margin-top: 10px; }
+.EditorList { height: 40px; background: #f8f8f8; overflow: hidden; font-weight: bold; border-bottom: 1px solid #fff; -moz-border-radius: 5px; }
+.EditorList h1 { font-size: 18px; margin-left: 10px; }
+.Editor { height: auto; overflow: hidden; }
+.CheckboxBug { display: inline-block; width: 20px; height: 15px; vertical-align: middle; background: url("../images/card-round.png"/*tpa=http://test.v5print.com/Areas/Shop/Themes/Default/Content/images/card-round.png*/) no-repeat 0px 0px; cursor: pointer; _margin: 4px; }
+.CheckboxBug.on { background-position: 0px -22px; }
+
+.Editor .editorrLeft {width: 780px; float: left; position: relative; }
+.Editor .editorRight { width: 390px; float: right; background: #F0F0F0; }
+.chushuixianh { display: block; width: 427px; height: 510px; background: url("../images/chuxuexian001.png"/*tpa=http://test.v5print.com/Areas/Shop/Themes/Default/Content/images/chuxuexian001.png*/); position: absolute; left: 68px; top: 2px; z-index: 2; }
+.chushuixianv { display: block; width: 520px; height: 410px; background: url("../images/chuxuexian002.png"/*tpa=http://test.v5print.com/Areas/Shop/Themes/Default/Content/images/chuxuexian002.png*/); position: absolute; left: 15px; z-index: 2; }
+
+#AdvantageTips { color: #ffffff; padding: 5px; background: #584a58; height: 30px; _height: 40px; line-height: 30px; float: right; width: 380px; }
+#AdvantageTips b { padding: 5px; margin-left: 20px; font-weight: 700; }
+#editorTools { background: #f8f8f8; width: auto; overflow: hidden; }
+#editorTools dl { clear: both; height: 20px; line-height: 20px; padding: 5px 10px 5px 10px; }
+#editorTools dl dt { float: left; }
+#editorTools dl dd { float: left; margin-left: 8px; color: #ff0000; }
+#editorTools dl dd a { color: #0a76bd; }
+#editorTools dl dd a:hover { color: #ff6a00; text-decoration: none; }
+
+.pagePreview { margin: 0px auto; overflow: hidden; text-align: center; padding: 0px 0px 10px 0px; margin-right: 2px;width:560px;float:left; }
+
+.pagePreview .pagec { margin-left: 6px; float: left; border: 2px dotted transparent; overflow: hidden; position: relative; margin-top: 5px; margin-bottom: 5px; }
+.selectedpage { border: 2px dotted #f84858!important; }
+.pagePreview img { float: left; position: absolute; border: 1px solid transparent; }
+.pagePreview .pageBackground { position: absolute; float: left; left: 0; top: 0; z-index: 1; width: auto; height: auto; overflow: hidden; }
+.pagePreview .pageBackground img { }
+.pagePreview .pageContent { position: absolute; float: left; z-index: 2; overflow: hidden; }
+
+.pageContent .ui-selecting { border: dashed 1px #0a76bd; }
+.pageContent .ui-selected { border: dashed 1px #0a76bd; }
+
+.pagePreview strong { width: 20px; height: 20px; display: inline-block; position: absolute; display: none; }
+.pagePreview strong.tl { background: url("../images/card-round_01.png"/*tpa=http://test.v5print.com/Areas/Shop/Themes/Default/Content/images/card-round_01.png*/) no-repeat 1px 1px; _background: none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../images/card-round_01.png",sizingMethod="crop"); top: -2px; left: -2px; }
+.pagePreview strong.tr { background: url("../images/card-round_03.png"/*tpa=http://test.v5print.com/Areas/Shop/Themes/Default/Content/images/card-round_03.png*/) no-repeat 7px 1px; _background: none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../images/card-round_03.png",sizingMethod="crop"); top: -2px; right: -2px; }
+.pagePreview strong.bl { background: url("../images/card-round_02.png"/*tpa=http://test.v5print.com/Areas/Shop/Themes/Default/Content/images/card-round_02.png*/) no-repeat 1px 8px; _background: none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../images/card-round_02.png",sizingMethod="crop"); bottom: -2px; left: -2px; }
+.pagePreview strong.br { background: url("../images/card-round_04.png"/*tpa=http://test.v5print.com/Areas/Shop/Themes/Default/Content/images/card-round_04.png*/) no-repeat 7px 8px; _background: none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../images/card-round_04.png",sizingMethod="crop"); bottom: -2px; right: -2px; }
+.pagebox { position: relative; overflow: hidden; width: 700px;margin: 0px auto;}
+
+.preTemplate, .nextTemplate { float: left;width:40px;height: 510px; }
+.preTemplate{ margin-right:10px; }
+.nextTemplate { margin-left:10px; }
+.preTemplate a, .nextTemplate a{ display: block;width: 40px;height: 74px;margin: 251px 0 0;background: url("../images/focus_btn.png"/*tpa=http://test.v5print.com/Areas/Shop/Themes/Default/Content/images/focus_btn.png*/) no-repeat; }
+.preTemplate a { background-position: -0px -78px; }
+.nextTemplate a { background-position: -40px -78px; }
+.preTemplate a:hover{background-position:-0px -0px;}
+.nextTemplate a:hover{background-position:-40px -0px;}
+
+.pageListNav { width: 390px; height: 30px; }
+.pageListNav ul { margin-top: 10px; overflow: hidden; padding-left: 10px; }
+.pageListNav ul li { width: 100px; height: 30px; float: left; overflow: hidden; text-align: center; border: none; background: #ede9e3; }
+.pageListNav ul li a { line-height: 30px; font-size: 14px; font-weight: bold; color: #000; text-align: center; display: block; font-family: 微软雅黑; text-decoration: none; border: none; }
+.pageListNav ul li.select { background: #584a58; border: none; }
+.pageListNav ul li.select a { color: #fff; }
+
+.pageListContent { border: 2px solid #584a58; background: #fff; }
+.pageListContent .pageItem { width: 368px; margin: 10px auto; height: 410px; overflow: auto; margin-top: 0; }
+/*
+   Logo样式
+*/
+.pageItem .logoItems { width: 340px; height: auto; margin-bottom: 10px; }
+.pageItem .logoItems .logoitem { width: 340px; height: 60px; overflow: hidden; padding-bottom: 8px; padding-top: 8px; border-bottom: 1px solid #C9E8FF; }
+.pageItem .logoItems .logoitem .logoleft { width: 60px; height: 60px; float: left; margin-left: 20px; text-align: center; }
+.pageItem .logoItems .logoitem .logoleft img { width: 58px; height: 58px; border: 1px solid #5399C7; }
+.pageItem .logoItems .logoitem .logoright { height: 60px; float: left; width: 250px; }
+.pageItem .logoItems .logoitem .logoright .uploadlogo { height: 30px; width: 100%; float: left; }
+.pageItem .logoItems .logoitem .logoright .resizelogo { margin-top: 8px; height: 20px; width: 100%; float: left; }
+.pageItem .logoItems .logoitem .logoright a.button { height: 25px; width: 80px; background: #584a58; display: block; float: left; margin-left: 10px; color: white; text-align: center; line-height: 25px; }
+.pageItem .logoItems .logoitem .logoright span { float: left; margin-left: 10px; }
+
+.pageItem .logoItems .logoitem .logoright .ui-corner-all { border-bottom-right-radius: 0px; border-top-right-radius: 0px; border-top-left-radius: 0px; border-bottom-left-radius: 0px; }
+.pageItem .logoItems .logoitem .logoright .ui-widget-content { background: #584a58; border: none; }
+.pageItem .logoItems .logoitem .logoright .ui-slider-horizontal { float: left; width: 135px; height: 8px; margin-top: 4px; }
+.pageItem .logoItems .logoitem .logoright .ui-slider-horizontal a { background: #f84858; border-bottom-right-radius: 0px; border-top-right-radius: 0px; border-top-left-radius: 0px; border-bottom-left-radius: 0px; height: 12px; width: 12px; top: -.2em; }
+
+#IsBold .ui-button-text { padding: 2px 5px; }
+.ui-slider-handle { top: -.2em; position: absolute; z-index: 2; width: 10px; height: 10px; cursor: default; }
+.pageItem .logoItems .logoitem .logoright .resizelogo .hidelogo { margin-left: 10px; }
+/**
+   文本样式
+**/
+.pageItem .textItems { width: 340px; height: auto; margin-bottom: 10px; font-size: 12px; }
+.pageItem .textItems .textitem { width: 330px; margin-bottom: 8px; padding-left: 5px; padding-right: 5px; }
+.pageItem .textItems .inputtext { width: 300px; height: 22px; padding-left: 5px; padding-right: 5px; border: 1px solid #F0F0F0; }
+.pageItem .textItems .inputtext:hover { width: 300px; height: 22px; border: 1px solid #91cd50; padding-left: 5px; padding-right: 5px; }
+.pageItem .textItems .inputtext:focus { width: 300px; height: 22px; border: 1px solid #91cd50; padding-left: 5px; padding-right: 5px; }
+.pageItem .textItems .inputtext.error { width: 300px; height: 22px; border: 1px solid #f84858; padding-left: 5px; padding-right: 5px; }
+.pageItem .textItems .inputtext { color: #000000; }
+.selectedtext { border: 1px solid #ff6a00; }
+
+.AddLogoButton { display: block; margin: 5px auto; text-align: center;width:100px; }
+.AddLogoButton:hover { color: #ff0000; text-decoration: none; }
+.AddTextButton { display: block; margin: 5px auto; text-align: center; width:100px;}
+.AddTextButton:hover { color: #ff0000; text-decoration: none; }
+
+#SetFontStyleTool { margin-top: 5px; overflow: hidden; }
+#ddlFontList { width: 150px; float: left; }
+
+#FontSizeList { width: 60px; float: left; margin-left: 10px; }
+#FontStyle { display: block; float: left; margin-left: 10px; height: 16px; line-height: 16px; }
+#ColorPickerBox { width: 16px; height: 16px; background: #ff0000; overflow: hidden; display: block; float: left; margin-left: 8px; margin-top: 3px; }
+
+#ColorPickerBox span { width: 14px; height: 14px; background: #ff0000; }
+.textitemFocus { background: #f4feea; border: 1px solid #91cd50; padding-top: 8px; padding-bottom: 8px; }
+
+.editorBottum {padding-top:10px; margin-top: 10px; width: 100%; height: 50px; text-align: center; }
+.editorBottum .button { width: 100px; height: 35px; background: #EA5E00; float: left; display: block; color: white; text-align: center; line-height: 35px; font-weight: 700; margin-left: 60px; text-decoration: none; }
+
+.xm-box { margin-bottom: 10px; background: #fff; _zoom: 1; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
+.godds-desc-menu ul { height: 20px; padding: 15px 0; overflow: hidden; }
+.godds-desc-menu li { float: left; display: inline-block; line-height: 20px; padding: 0 15px; color: #434a54; font-size: 16px; cursor: pointer; }
+.godds-desc-menu li:hover { color: #f84858; }
+
+.godds-desc-menu .current { color: #f84858; }
+.goods-desc-con { width: 100%; padding: 10px 0; overflow: hidden; text-align: center; }
+
+.userTemplate { clear: both; width: 960px; overflow: hidden; margin: 10px auto; }
+.userTemplateTitle { background: #F8F8F8; overflow: hidden; height: 40px; line-height: 40px; border-bottom: 1px solid #e8e8e8; border-radius: 5px 5px 0 0; background: #ffffff; background: -webkit-linear-gradient(top, #ffffff, #f7f7f7); }
+.userTemplateTitle a { color: white; float: left; line-height: 35px; font-weight: 700; }
+.userTemplateTitle .ttitle { width: 100px; text-align: center; background: #686868; margin-right: 2px; float: left; width: 150px; text-align: center; border-left: 1px solid #e8e8e8; /* padding: 0 21px; */ }
+.userTemplateTitle .ttitle:hover { color: white; background: #EA5E00; text-decoration: none; height: 37px; line-height: 32px; border-top: 4px solid #ccd1d9; background: #fff; }
+.userTemplateTitle .hover { color: white; background: #EA5E00; }
+.userTemplateTitle .more { float: right; margin-left: 10px; line-height: 35px; font-weight: 700; margin-right: 10px; color: #fff; }
+.userTemplateContent { clear: both; background: #fff; width: auto; height: auto; overflow: hidden; }
+.userTemplateContent ul { overflow: hidden; margin-bottom: 10px; padding-left: 15px; }
+.userTemplateContent li { width: 210px; float: left; margin-left: 20px; border: 1px solid #F0F0F0; text-align: center; margin-top: 10px; padding-bottom: 10px; height: 179px; overflow: hidden; }
+.userTemplateContent li p { overflow: hidden; line-height: 30px; }
+.userTemplateContent li .templatethumb { display: block; text-align: center; padding-top: 5px; width: 217px; height: 140px; overflow: hidden; }
+
+.lefttitle { display: block; float: left; text-align: left; width: 150px; height: 20px; line-height: 20px; margin-left: 5px; overflow: hidden; }
+
+.rightbutton { display: block; float: right; margin-right: 5px; width: 40px; color: #0a76bd; overflow: hidden; height: 20px; line-height: 20px; font-weight: 700; }
+
+#ShowNoTemplate { line-height: 80px; overflow: hidden; margin: 10px auto; text-align: center; }
+
+#ShowNoTemplate h1 { text-align: center; color: #808080; font-family: 微软雅黑; font-weight: 700; }
+#ShowNoTemplate a { display: block; background: #EA5E00; width: 100px; height: 30px; color: #fff; font-family: 微软雅黑; font-size: 14px; font-weight: bold; line-height: 30px; text-align: center; margin: 10px auto; }
+
+#ShowNoTemplate a:hover { background: #ff6a00; color: #fff; }
+
+.hot-mp-list1 a { width: 200px; overflow: hidden; }
+
+.hot-mp-list1 img { max-height: 120px; max-width: 200px; }
+.hidelogo { background: url("../images/ico-close2.gif"/*tpa=http://test.v5print.com/Areas/Shop/Themes/Default/Content/images/ico-close2.gif*/) no-repeat; width: 8px; height: 8px; display: block; float: right; margin-top: 7px; }
+.alignleft, .alignright, .aligntop, .alignbottom, .aligncenter, .alignmiddle, .alignhori, .alignvert, .alignleft:hover, .alignright:hover, .aligntop:hover, .alignbottom:hover, .aligncenter:hover, .alignmiddle:hover, .alignhori:hover, .alignvert:hover { width: 80px; height: 20px; background: url("../images/aligntypebg.gif"/*tpa=http://test.v5print.com/Areas/Shop/Themes/Default/Content/images/aligntypebg.gif*/) no-repeat; display: block; float: left; }
+.alignleft { background-position: 0px 0px; }
+.alignright { background-position: 0px -20px; }
+.aligntop { background-position: 0px -40px; }
+.alignbottom { background-position: 0px -60px; }
+.aligncenter { background-position: 0px -100px; }
+.alignmiddle { background-position: 0px -80px; }
+.alignhori { background-position: 0px -120px; }
+.alignvert { background-position: 0px -140px; }
+
+.alignleft:hover { background-position: -80px 0px; }
+.alignright:hover { background-position: -80px -20px; }
+.aligntop:hover { background-position: -80px -40px; }
+.alignbottom:hover { background-position: -80px -60px; }
+.aligncenter:hover { background-position: -80px -100px; }
+.alignmiddle:hover { background-position: -80px -80px; }
+.alignhori:hover { background-position: -80px -120px; }
+.alignvert:hover { background-position: -80px -140px; }
+
+.tipsa, .tipsb, .tipsc { position: absolute; z-index: 1000; left: 50%; top: 50%; }
+.tipsa { margin-top: -300px; margin-left: 130px; }
+.tipsb { margin-top: -300px; margin-left: -100px; }
+.tipsc { margin-top: -160px; margin-left: -100px; }
+.zindex1000 { z-index: 1000; position: relative; background: #fff; }
+
+.mpys { background: #f3f3f3; }
+.mpys-cont { overflow: hidden; padding-bottom: 10px; }
+.mpys-cont div p.jg { font-weight: bold; color: #ff6600; line-height: 34px; }
+.mpys-cont table { width: 450px; color: #666666; font: 12px/1 "宋体","Microsoft Yahei",arial,simhei; line-height: 25px; }
+.mpys-cont table th { height: 30px; background: #FFDEC8; }
+.mpys-cont table td, .mpys-cont table th { border-bottom: 1px solid #e3e3e3; border-right: 1px solid #e3e3e3; text-align: center; }
+.even { background: #F4F4F4!important; }
+.mpys-cont table td { height: 30px; }
+.odd { background: #FAFAFA!important; }
+.yinshuawrap { margin: 0px 10px 10px 100px; padding: 0px 0 15px 0; float:left; }
+.yinshuawrap a { display: block; width: 142px; height: 40px; padding-left: 22px; text-align: center; line-height: 40px; background: #2ca9e0 url("../../../../../../../gtcdn1.gaitu.com/images/mp/mpSprite.png"/*tpa=http://gtcdn1.gaitu.com/images/mp/mpSprite.png*/) no-repeat -166px -954px; text-decoration: none; color: #fff; font-weight: bold; }
+.mpys-sm p { font: 12px/1 "宋体","Microsoft Yahei",arial,simhei; line-height: 25px; }
+
+#flow { padding-top: 20px; overflow: hidden; }
+.flow-box { border-radius: 2px; float: left; display: inline; width: 220px; height: 170px; margin-left: 12px; margin-right: 3px; margin-bottom: 15px; padding-top: 11px; background: #fffffd; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4); }
+.flow-thumb { text-align: center; }
+.flow-thumb:hover { opacity: 0.6; filter: alpha(opacity=60); -moz-opacity: 0.6; }
+.flow-info { padding-top: 10px; padding-bottom: 10px; width: 200px; text-align: center; line-height: 20px; }
+a.moremb { float: right; margin: 22px 20px 0 0; padding-left: 18px; line-height: 16px; }
+
+@media (max-width:1200px) {
+   .Editor .editorrLeft { width: 540px; float: left; position: relative; }
+   .yinshuawrap { margin: 10px 10px 10px 20px; padding: 0px 0 15px 0; clear:both; }
+   .yinshuawrap p { line-height: 34px;float:left; margin-right:20px; }
+   .yinshuawrap a { display: block;float:left; width: 142px; height: 40px; padding-left: 22px; text-align: center; line-height: 40px; background: #2ca9e0 url("../../../../../../../gtcdn1.gaitu.com/images/mp/mpSprite.png"/*tpa=http://gtcdn1.gaitu.com/images/mp/mpSprite.png*/) no-repeat -166px -954px; text-decoration: none; color: #fff; font-weight: bold; }
+}
+
+.ico2012522 { display: block; border: 1px solid #5FBFFF; padding: 3px 12px 3px 26px; color: #666; margin-right: 10px; background: #E6F5FF url("../images/gaitanaha.jpg"/*tpa=http://test.v5print.com/Areas/Shop/Themes/Default/Content/images/gaitanaha.jpg*/) no-repeat 5px 4px; }
